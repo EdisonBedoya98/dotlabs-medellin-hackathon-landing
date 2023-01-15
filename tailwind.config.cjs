@@ -1,0 +1,22 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  theme: {
+    extend: {
+      colors: {
+        // Using modern `rgb`
+        main: "rgb(28 13 9 / 1)",
+        alternate: "rgb(var(--alternate-color) / 1)",
+        "back-white": "rgb(255 255 255 / 0.5)",
+        //hover: "rgb(var(--hover-color) / 1)",
+        // "dark-blue": "rgb(var(--dark-blue) / 1)",
+        /*    "gradient-purple": "#a557f2",
+        "gradient-blue": "#347ebf",
+        "base-gray": "rgb(71 71 71 / 1)",
+        "back-gray": "rgb(244 244 244 / 1)",
+        "gray-font": "rgb(70 70 70 / 1)", */
+      },
+    },
+  },
+  plugins: [],
+};
