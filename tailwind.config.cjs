@@ -9,6 +9,7 @@ module.exports = {
         alternate: "rgb(var(--alternate-color) / 1)",
         "back-white": "rgb(255 255 255 / 0.5)",
         "yellow-custom": "rgb(234, 217, 76)",
+        "orange-dimmed": "rgba(221, 115, 115, 1)",
         //hover: "rgb(var(--hover-color) / 1)",
         // "dark-blue": "rgb(var(--dark-blue) / 1)",
         /*    "gradient-purple": "#a557f2",
