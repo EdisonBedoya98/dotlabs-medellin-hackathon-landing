@@ -1,15 +1,33 @@
 ---
+import startIcon from "../assets/icons/start.svg";
+import lineIcon from "../assets/icons/line-title.svg";
+import backgroundHomeImage from "../assets/images/background-home.svg";
 ---
 
-<section class="h-screen min-h-[20rem] flex justify-center items-center">
-  <div class="bg-red-200 flex flex-col items-center gap-y-4">
-    <h1>DOTLABS (MEDELLÍN)</h1>
-    <p class="max-w-md text-center">
+<section class="h-screen min-h-[20rem] flex justify-center">
+  <img
+    src={backgroundHomeImage}
+    alt="Background image"
+    class="absolute w-full top-0"
+  />
+
+  <div class="flex flex-col items-center gap-y-4 mt-36">
+    <h1 class="text-main text-6xl font-extrabold flex gap-x-3">
+      DOTLABS
+      <div>
+        (MEDELLÍN)
+        <img src={lineIcon} alt="Line Icon" class="w-[18rem] ml-7" />
+      </div>
+    </h1>
+    <p class="max-w-md text-center text-lg">
       ¿Te sumas al reto de participar en la hackathon blockchain más grande de
       Latinoamérica?
     </p>
-    <button class="bg-purple-900 text-white px-10 py-1 rounded-lg"
-      >Continuar</button
+    <button
+      class="bg-main text-white px-16 py-3 rounded-lg flex items-center gap-x-4"
     >
+      <img src={startIcon} alt="Start Icon" />
+      <span>Comenzar</span>
+    </button>
   </div>
 </section>

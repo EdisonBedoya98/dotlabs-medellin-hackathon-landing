@@ -5,10 +5,10 @@ module.exports = {
     extend: {
       colors: {
         // Using modern `rgb`
-        main: "rgb(28 13 9 / 1)",
+        main: "rgb(28, 13, 93)",
         alternate: "rgb(var(--alternate-color) / 1)",
         "back-white": "rgb(255 255 255 / 0.5)",
-
+        "yellow-custom": "rgb(234, 217, 76)",
         //hover: "rgb(var(--hover-color) / 1)",
         // "dark-blue": "rgb(var(--dark-blue) / 1)",
         /*    "gradient-purple": "#a557f2",

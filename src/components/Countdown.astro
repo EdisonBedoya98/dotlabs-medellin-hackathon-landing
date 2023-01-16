@@ -1,6 +1,16 @@
 ---
+import timerIcon from "../assets/icons/timer.svg";
 ---
 
-<section class="bg-purple-800 text-white flex justify-center items-center h-9">
-  <div>Solo faltan: 3 Días / 18 Hrs / 25seg</div>
+<section
+  class="bg-main text-white flex justify-center items-center h-11 sticky top-14"
+>
+  <div class="flex gap-x-3">
+    <img src={timerIcon} alt="Instagram" />
+    <p>
+      Solo faltan:<span class="text-yellow-custom font-semibold">
+        3 Días / 18 Hrs / 25seg</span
+      >
+    </p>
+  </div>
 </section>
