@@ -2,11 +2,44 @@
 import Layout from "../layouts/Layout.astro";
 import Home from "../components/Home.astro";
 import CardInformation from "../components/CardInformation.astro";
+import cardInformationImage_1 from "./../assets/images/cardInfo_img_1.svg";
+import cardInformationImage_2 from "./../assets/images/cardInfo_img_2.svg";
+import { textGradient } from "../utils/constants";
+import TicketCard from "../components/TicketCard.astro";
+
+const cardInfoContent1 = [
+  "Has parte de este evento que va a estar de otro nivel, serán dos días de hacking donde se van a generar ideas disruptivas y soluciones innovadoras a problemas reales a través de la tecnología Blockchain. Rétate con este gran evento, donde estarás trabajando de la mano con los mejores desarrolladores blockchain de la industria.",
+  "El evento está respaldado por la Ethereum foundation. Ven y disfruta de bebidas y comida mientras conectas con las mentes mas brillantes del ecosistema.",
+];
+
+const cardInfoContent2 = [
+  "Buscamos que personas de diferentes industrias y contextos converjan en un mismo espacio y esto genere un ambiente propicio para la generación de ideas disruptivas y soluciones innovadoras.",
+  "El objetivo principal del proyecto es que las mejores ideas puedan ser incubadas y desarrolladas.",
+];
 ---
 
 <Layout title="Welcome to Astro.">
   <Home />
-  <CardInformation />
+  <CardInformation
+    title_h1={"48 HORAS DE HACKATHON"}
+    content={cardInfoContent1}
+    img={cardInformationImage_1}
+    imgAlt="Alt text"
+  >
+    <div class="max-w-max p-3 rounded-2xl my-3 bg-yellow-custom">
+      <p class={`font-bold ${textGradient} text-3xl tracking-wide`}>
+        MARZO 24 Y 25
+      </p>
+    </div>
+  </CardInformation>
+  <CardInformation
+    reverse={true}
+    title_h2={"¿Quién?"}
+    content={cardInfoContent2}
+    img={cardInformationImage_2}
+    imgAlt="Alt text"
+  />
+  <TicketCard />
   <!--  <h1 class="text-green-600">
       Welcome to <span class="text-gradient">Astro</span>
     </h1>

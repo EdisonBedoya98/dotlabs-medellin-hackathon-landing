@@ -1,4 +1,48 @@
 ---
+import { textGradient } from "../utils/constants";
+
+export interface Props {
+  content: string[];
+  img: string;
+  imgAlt: string;
+  reverse?: boolean;
+  title_h1?: string;
+  title_h2?: string;
+}
+
+const { content, img, imgAlt, reverse, title_h1, title_h2 } = Astro.props;
 ---
 
-<div>poner acá la info</div>
+<section
+  class={`h-screen min-h-[20rem] flex justify-between ${
+    reverse ? "flex-row-reverse" : null
+  }`}
+>
+  <div class="w-1/2 max-w-sm flex flex-col m-auto">
+    {
+      title_h1 ? (
+        <h1 class={`text-5xl text-start font-extrabold ${textGradient}`}>
+          {title_h1}
+        </h1>
+      ) : null
+    }
+    {
+      title_h2 ? (
+        <h2 class={`text-4xl text-start font-extrabold ${textGradient}`}>
+          {title_h2}
+        </h2>
+      ) : null
+    }
+    <slot />
+    {
+      content.map((item, index) => (
+        <p id={`content-${index + 1}`} class="my-3">
+          {item}
+        </p>
+      ))
+    }
+  </div>
+  <div class="w-1/2 my-auto">
+    <img src={img} alt={imgAlt} />
+  </div>
+</section>
