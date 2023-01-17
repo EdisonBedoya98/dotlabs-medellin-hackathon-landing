@@ -1,10 +1,15 @@
 ---
-import { backgroundGradientColor, textGradient } from "../utils/constants";
+import { textGradient } from "../utils/constants";
 ---
 
 <section class="h-screen min-h-[20rem] flex justify-between">
+  <img
+    src="/src/assets/images/background_blocks_rigth-ticketCard.svg"
+    alt=""
+    class="absolute right-0 z-10 brightness-100"
+  />
   <div
-    class={`w-full h-3/4 rounded-3xl flex flex-col bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 place-content-center shadow-xl ${backgroundGradientColor}`}
+    class={`w-full h-3/4 rounded-3xl flex flex-col place-content-center drop-shadow-xl bg-gradient-to-tl to-orange-50 from-blue-100 opacity-90 backdrop-blur-sm z-20`}
   >
     <h1 class={`text-center text-7xl font-extrabold ${textGradient}`}>
       OBTÉN TU TICKET
@@ -13,8 +18,21 @@ import { backgroundGradientColor, textGradient } from "../utils/constants";
       ¡No esperes más y obtén tu ticket para participar!
     </p>
     <button
-      class={`w-[300px] gap-3 rounded-2xl py-2 px-12 flex place-self-center justify-center text-white mt-10 bg-main`}
-      ><img src="/src/assets/icons/ticket-icon.svg" alt="Alt text" /> Adquirir</button
+      class={`w-[300px] gap-3 rounded-2xl py-2 px-12 flex place-self-center justify-center text-white mt-10 bg-main z-10`}
+      ><img
+        src="/src/assets/icons/ticket-icon.svg"
+        alt="Alt text"
+      />Adquirir</button
     >
+    <img
+      src="/src/assets/images/background_blocks_left-ticketCard.svg"
+      alt="a"
+      class="absolute bottom-0"
+    />
+    <img
+      src="/src/assets/images/background_dots-ticketCard.svg"
+      alt="a"
+      class="absolute right-0 h-full rounded-3xl"
+    />
   </div>
 </section>
