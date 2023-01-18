@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "translate": "npx astro-i18next generate"
   },
   "dependencies": {
     "@astrojs/tailwind": "^2.1.3",

@@ -1,16 +1,18 @@
 ---
 import { textGradient } from "../utils/constants";
-
+import i18next, { t } from "i18next";
+import { Trans } from "astro-i18next/components";
 export interface Props {
-  content: string[];
-  img: string;
+  firstTextContent: any;
+  secondTextContent: any;
+  imgPath: string;
   imgAlt: string;
   reverse?: boolean;
-  title_h1?: string;
-  title_h2?: string;
+  mainTitle?: any;
+  secundaryTitle?: any;
 }
 
-const { content, img, imgAlt, reverse, title_h1, title_h2 } = Astro.props;
+const { firstTextContent, secondTextContent, imgPath, imgAlt, reverse, mainTitle, secundaryTitle } = Astro.props;
 ---
 
 <section
@@ -20,29 +22,26 @@ const { content, img, imgAlt, reverse, title_h1, title_h2 } = Astro.props;
 >
   <div class="w-1/2 max-w-sm flex flex-col m-auto">
     {
-      title_h1 ? (
+      mainTitle ? (
         <h1 class={`text-5xl text-start font-extrabold ${textGradient}`}>
-          {title_h1}
+          {mainTitle}
         </h1>
       ) : null
     }
     {
-      title_h2 ? (
+      secundaryTitle ? (
         <h2 class={`text-4xl text-start font-extrabold ${textGradient}`}>
-          {title_h2}
+          {secundaryTitle}
         </h2>
       ) : null
     }
     <slot />
-    {
-      content.map((item, index) => (
-        <p id={`content-${index + 1}`} class="my-3">
-          {item}
-        </p>
-      ))
-    }
+    <div class="flex flex-col gap-2">
+      <p>{firstTextContent}</p>
+      <p>{secondTextContent}</p>
+    </div>
   </div>
   <div class="w-1/2 my-auto">
-    <img src={img} alt={imgAlt} />
+    <img src={imgPath} alt={imgAlt} />
   </div>
 </section>

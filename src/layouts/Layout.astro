@@ -2,21 +2,20 @@
 import Header from "../components/Header.astro";
 import Countdown from "../components/Countdown.astro";
 import { backgroundGradientColor } from "../utils/constants";
-/* export interface Props {
-  title: string;
-}
-
-const { title } = Astro.props; */
+import i18next from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={i18next.language}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Dotlabs(Medellín)</title>
+    <title>{title}</title>
+    <HeadHrefLangs />
     <!-- Improve SEO -->
   </head>
   <body class={`w-full mx-auto ${backgroundGradientColor}`}>
