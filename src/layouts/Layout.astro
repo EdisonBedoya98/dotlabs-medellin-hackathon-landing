@@ -4,6 +4,7 @@ import Countdown from "../components/Countdown.astro";
 import { backgroundGradientColor } from "../utils/constants";
 import i18next from "i18next";
 import { HeadHrefLangs } from "astro-i18next/components";
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@ import { HeadHrefLangs } from "astro-i18next/components";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Dotlabs(Medellín)</title>
+    <title>{title}</title>
     <HeadHrefLangs />
     <!-- Improve SEO -->
   </head>
