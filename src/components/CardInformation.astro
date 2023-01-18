@@ -1,16 +1,18 @@
 ---
 import { textGradient } from "../utils/constants";
-
+import i18next, { t } from "i18next";
+import { Trans } from "astro-i18next/components";
 export interface Props {
-  content: string[];
+  p1: any;
+  p2: any;
   img: string;
   imgAlt: string;
   reverse?: boolean;
-  title_h1?: string;
-  title_h2?: string;
+  title_h1?: any;
+  title_h2?: any;
 }
 
-const { content, img, imgAlt, reverse, title_h1, title_h2 } = Astro.props;
+const { p1, p2, img, imgAlt, reverse, title_h1, title_h2 } = Astro.props;
 ---
 
 <section
@@ -34,13 +36,10 @@ const { content, img, imgAlt, reverse, title_h1, title_h2 } = Astro.props;
       ) : null
     }
     <slot />
-    {
-      content.map((item, index) => (
-        <p id={`content-${index + 1}`} class="my-3">
-          {item}
-        </p>
-      ))
-    }
+    <div class="flex flex-col gap-2">
+      <p>{p1}</p>
+      <p>{p2}</p>
+    </div>
   </div>
   <div class="w-1/2 my-auto">
     <img src={img} alt={imgAlt} />

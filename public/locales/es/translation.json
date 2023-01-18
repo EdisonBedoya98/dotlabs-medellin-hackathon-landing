@@ -1,0 +1,30 @@
+{
+  "home": {
+    "invitation": "¿Te sumas al reto de participar en la hackathon blockchain más grande de Latinoamérica?",
+    "button": "Comenzar"
+  },
+  "header": {
+    "nav": {
+      "home": "Inicio",
+      "date": "Fecha"
+    }
+  },
+  "cardInformation": {
+    "date": "24 y 25 DE MARZO",
+    "card1": {
+      "title": "48 HORAS DE HACKATHON",
+      "p1": "Has parte de este evento que va a estar de otro nivel, ser\u00E1n dos d\u00EDas de hacking donde se van a generar ideas disruptivas y soluciones innovadoras a problemas reales a trav\u00E9s de la tecnolog\u00EDa Blockchain. R\u00E9tate con este gran evento, donde estar\u00E1s trabajando de la mano con los mejores desarrolladores blockchain de la industria.",
+      "p2": "El evento est\u00E1 respaldado por la Ethereum foundation. Ven y disfruta de bebidas y comida mientras conectas con las mentes mas brillantes del ecosistema."
+    },
+    "card2": {
+      "title": "¿Quién?",
+      "p1": "Buscamos que personas de diferentes industrias y contextos converjan en un mismo espacio y esto genere un ambiente propicio para la generaci\u00F3n de ideas disruptivas y soluciones innovadoras.",
+      "p2": "El objetivo principal del proyecto es que las mejores ideas puedan ser incubadas y desarrolladas."
+    }
+  },
+  "ticketCard": {
+    "title": "OBTÉN TU TICKET",
+    "p1": "¡No esperes más y obtén tu ticket para participar!",
+    "button": "Adquirir"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "home": {
+    "invitation": "Are you ready to join the challenge of participating in the greatest blockchain hackathon in Latin America?",
+    "button": "Register now"
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "date": "Date"
+    }
+  },
+  "cardInformation": {
+    "date": "MARCH 24 - 26",
+    "card1": {
+      "title": "48 HOURS OF HACKATHON",
+      "p1": "Join us for this event that will be on another level, it will be two days of hacking where disruptive ideas and innovative solutions to real problems will be generated through Blockchain technology. Challenge yourself with this great event, where you will be working hand by hand with the best blockchain developers in the industry.",
+      "p2": "The event is supported by the Ethereum foundation. Come and enjoy drinks and food while connecting with the brightest minds in the ecosystem."
+    },
+    "card2": {
+      "title": "Who?",
+      "p1": "We seek that people from different industries and contexts converge in the same space and this generates an environment conducive to the generation of disruptive ideas and innovative solutions.",
+      "p2": "The main goal of the project is that the best ideas can be hatched and developed."
+    }
+  },
+  "ticketCard": {
+    "title": "GET YOUR TICKET",
+    "p1": "Don't wait anymore and get your ticket to now!",
+    "button": "Register now"
+  }
+}

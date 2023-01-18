@@ -3,6 +3,7 @@ import startIcon from "../assets/icons/start.svg";
 import lineIcon from "../assets/icons/line-title.svg";
 import backgroundHomeImage from "../assets/images/background-home.svg";
 import { textGradient } from "../utils/constants";
+import { Trans } from "astro-i18next/components";
 ---
 
 <section class="h-screen min-h-[20rem] flex justify-center">
@@ -21,14 +22,16 @@ import { textGradient } from "../utils/constants";
       </div>
     </h1>
     <p class="max-w-md text-center text-lg">
-      ¿Te sumas al reto de participar en la hackathon blockchain más grande de
-      Latinoamérica?
+      <Trans i18nKey="home.invitation">
+        ¿Te sumas al reto de participar en la hackathon blockchain más grande de
+        Latinoamérica?
+      </Trans>
     </p>
     <button
       class="bg-main text-white px-16 py-3 rounded-lg flex items-center gap-x-4"
     >
       <img src={startIcon} alt="Start Icon" />
-      <span>Comenzar</span>
+      <span><Trans i18nKey="home.button">Comenzar</Trans></span>
     </button>
   </div>
 </section>

@@ -4,6 +4,7 @@ import dotlabsHandIcon from "../assets/icons/dotlabs-hand.svg";
 import facebookIcon from "../assets/social-media/facebook.svg";
 import githubIcon from "../assets/social-media/github.svg";
 import instagramIcon from "../assets/social-media/instagram.svg";
+import { LanguageSelector, Trans } from "astro-i18next/components";
 ---
 
 <header class="h-16 sticky top-0 backdrop-blur-[2px] z-40">
@@ -19,17 +20,37 @@ import instagramIcon from "../assets/social-media/instagram.svg";
       <span class="font-bold"> Dotlabs()</span>
     </div>
     <nav class="flex gap-x-4">
-      <span class="hover:font-semibold">Inicio</span>
-      <span class="hover:font-semibold">Fecha</span>
+      <span class="hover:font-semibold"
+        ><Trans i18nKey="header.nav.home">Inicio</Trans></span
+      >
+      <span class="hover:font-semibold"
+        ><Trans i18nKey="header.nav.date">Fecha</Trans></span
+      >
+      <!-- Does not require translation -->
       <span class="hover:font-semibold">Teams</span>
+      <!-- Does not require translation -->
       <span class="hover:font-semibold">Ticket</span>
+      <!-- Does not require translation -->
       <span class="hover:font-semibold">FAQ</span>
+      <!-- Does not require translation -->
       <span class="hover:font-semibold">Map</span>
     </nav>
     <div class="flex gap-x-5">
       <img src={facebookIcon} alt="Facebook" />
       <img src={githubIcon} alt="Github" />
       <img src={instagramIcon} alt="Instagram" />
+      <LanguageSelector showFlag={true} class="languaje" />
     </div>
   </div>
 </header>
+
+<style>
+  .languaje {
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .languaje:focus {
+    outline: 2px solid blue;
+  }
+</style>
