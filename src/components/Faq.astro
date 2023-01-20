@@ -3,28 +3,35 @@ import { backgroundGradientColor, textGradient } from "../utils/constants";
 
 export interface Props {
   content: string[];
-  title_h1?: string;
   title_h2?: string;
-  input?: string;
+  span?: string;
 }
 
-const { content, img, input, imgAlt, reverse, title_h1, title_h2 } =
-  Astro.props;
+const { content, span, title_h2 } = Astro.props;
 ---
 
 <div>
+  <div class="flex justify-between">
+    {
+      title_h2 ? (
+        <h2 class="text-4xl text-main font-medium">{title_h2}</h2>
+      ) : null
+    }
 
-  <div class="flex justify-between ">
-    <h2 class="text-4xl text-main font-medium "> ¿ Que es el Hackaton ?</h2>
-    <span class="text-4xl text-gray-600">+</span>
+    {span ? <span class="text-4xl text-gray-600">+ {span}</span> : null}
   </div>
 
-  <p class="py-6 ">
-    Un hackathon es un evento en el que participantes de diferentes áreas de
-    especialización se reúnen durante un período de tiempo limitado para
-    colaborar y desarrollar soluciones tecnológicas innovadoras.
-  </p>
- 
-  <hr class="bg-slate-600 py-[0.8px]" />
-
+  {
+    content ? (
+      <>
+        <p class="py-6">
+          Un hackathon es un evento en el que participantes de diferentes áreas
+          de especialización se reúnen durante un período de tiempo limitado
+          para colaborar y desarrollar soluciones tecnológicas innovadoras.
+          {content}
+        </p>
+        <hr class="bg-slate-600 py-[0.8px]" />
+      </>
+    ) : null
+  }
 </div>
