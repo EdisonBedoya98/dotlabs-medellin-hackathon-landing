@@ -8,6 +8,7 @@ import { textGradient } from "../utils/constants";
 import TicketCard from "../components/TicketCard.astro";
 import { t, changeLanguage } from "i18next";
 import { Trans } from "astro-i18next/components";
+import FaqList from "../components/FaqList.astro";
 
 changeLanguage("es");
 ---
@@ -36,4 +37,9 @@ changeLanguage("es");
     imgAlt="Image cannot be rendered"
   />
   <TicketCard />
+
+  <FaqList>
+
+    
+  </FaqList>
 </Layout>
