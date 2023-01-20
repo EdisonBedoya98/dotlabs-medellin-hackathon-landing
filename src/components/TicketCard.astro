@@ -1,22 +1,24 @@
 ---
 import { Trans } from "astro-i18next/components";
 import { textGradient } from "../utils/constants";
+import BackgroundBlockLeft from "../assets/images/background_blocks_left.svg";
+import BackgroundBlockRigth from "../assets/images/background_blocks_rigth.svg";
 ---
 
 <section class="h-screen min-h-[20rem] flex justify-between">
-  <img
-    src="/src/assets/images/background_blocks_rigth-ticketCard.svg"
-    alt=""
-    class="absolute right-0 z-10 brightness-100"
-  />
   <div
-    class={`w-full h-3/4 rounded-3xl flex flex-col place-content-center drop-shadow-xl bg-gradient-to-tl to-orange-50 from-blue-100 opacity-90 backdrop-blur-sm z-20`}
+    class="w-full h-3/4 rounded-3xl flex flex-col place-content-center drop-shadow-xl bg-gradient-to-tl to-orange-50 from-blue-100 opacity-90 backdrop-blur-sm"
   >
-    <h1 class={`text-center text-7xl font-extrabold ${textGradient}`}>
+    <img
+      src={BackgroundBlockRigth}
+      alt="The image cannot be rendered"
+      class="absolute top-0 right-0 brightness-100"
+    />
+    <h1 class={`text-center text-7xl font-extrabold ${textGradient} z-30`}>
       <Trans i18nKey="ticketCard.title">OBTÉN TU TICKET</Trans>
     </h1>
-    <p class="text-center text-3xl font-bold">
-      <Trans i18nKey="ticketCard.p1">
+    <p class="text-center text-3xl font-bold z-30">
+      <Trans i18nKey="ticketCard.textContent">
         ¡No esperes más y obtén tu ticket para participar!
       </Trans>
     </p>
@@ -29,14 +31,9 @@ import { textGradient } from "../utils/constants";
       </Trans></button
     >
     <img
-      src="/src/assets/images/background_blocks_left-ticketCard.svg"
-      alt="a"
+      src={BackgroundBlockLeft}
+      alt="The iamge cannot be rendered"
       class="absolute bottom-0"
-    />
-    <img
-      src="/src/assets/images/background_dots-ticketCard.svg"
-      alt="a"
-      class="absolute right-0 h-full rounded-3xl"
     />
   </div>
 </section>

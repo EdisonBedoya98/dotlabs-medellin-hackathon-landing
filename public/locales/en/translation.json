@@ -3,11 +3,9 @@
     "invitation": "Are you ready to join the challenge of participating in the greatest blockchain hackathon in Latin America?",
     "button": "Register now"
   },
-  "header": {
-    "nav": {
-      "home": "Home",
-      "date": "Date"
-    }
+  "nav": {
+    "home": "Home",
+    "date": "Date"
   },
   "cardInformation": {
     "date": "MARCH 24 - 26",
@@ -24,7 +22,11 @@
   },
   "ticketCard": {
     "title": "GET YOUR TICKET",
-    "firstTextContent": "Don't wait anymore and get your ticket to now!",
+    "textContent": "Don't wait anymore and get your ticket to now!",
     "button": "Register now"
+  },
+  "mapSection": {
+    "title": "Don't get lost!",
+    "textContent": "The hackathon will take place in a unique location specially designed for this event! Through Google Maps, you will be able to see in detail the location of the event and get directions to the venue. Don't miss this unique opportunity to participate in the hackhaton in the perfect place, we are waiting for you there!"
   }
 }
