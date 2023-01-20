@@ -1,38 +1,32 @@
 ---
 import { backgroundGradientColor, textGradient } from "../utils/constants";
 import Faq from "./Faq.astro";
+import i18next, { t } from "i18next";
+import { Trans } from "astro-i18next/components";
 
 export interface Props {
-    
-   
-    
-    
-    title_h1?: string;
-    title_h2?: string;
-    input?: string;
-  }
+  title_h1?: string;
+  title_h2?: string;
+  input?: string;
+}
+---
 
-  ---
-  <div class={`w-full h-3/4 rounded-3xl flex flex-col bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 place-content-center shadow-xl ${backgroundGradientColor}`} >
+<div
+  class={`w-full h-3/4 rounded-3xl flex flex-col bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 place-content-center shadow-xl ${backgroundGradientColor}`}
+>
+  <h2 class="text-center text-7xl font-extrabold ${textGradient}">
+    ¿Tienes dudas sobre el hackathon?
+  </h2>
+  <p class="text-center text-3xl font-bold py-4">
+    Aquí encontrarás las respuestas
+  </p>
+  <div class="grid grid-cols-2 gap-10">
 
-<h2 class="text-center text-7xl font-extrabold ${textGradient}">
-  ¿Tienes dudas sobre el hackathon?
-</h2>
-<p class="text-center text-3xl font-bold py-4 ">
-  Aquí encontrarás las respuestas
-</p>
-</div>
+    <faqList>
+    
+    </faqList>
 
-<div class="grid grid-cols-2 gap-10" >
-  <Faq />
-  <Faq />
-  <Faq />
-  <Faq />
-  <Faq />
-  <Faq />
-  <Faq />
-  <Faq />
-  <Faq />
-  <Faq />
-   
+  </div>
+
+
 </div>
