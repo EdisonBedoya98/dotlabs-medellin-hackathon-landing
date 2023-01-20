@@ -1,10 +1,9 @@
 ---
 import { backgroundGradientColor } from "../utils/constants";
 import dotlabsHandIcon from "../assets/icons/dotlabs-hand.svg";
-import facebookIcon from "../assets/social-media/facebook.svg";
-import githubIcon from "../assets/social-media/github.svg";
-import instagramIcon from "../assets/social-media/instagram.svg";
+import Socials from "./Socials.astro";
 import { LanguageSelector, Trans } from "astro-i18next/components";
+import DotlabsLogo from "./DotlabsLogo.astro";
 ---
 
 <header class="h-16 sticky top-0 backdrop-blur-[2px] z-40">
@@ -15,16 +14,13 @@ import { LanguageSelector, Trans } from "astro-i18next/components";
   <div
     class={`flex justify-between items-center max-w-[90rem] mx-auto px-12 h-full relative text-main `}
   >
-    <div class="flex items-center gap-x-4">
-      <img src={dotlabsHandIcon} alt="Dotlabs" />
-      <span class="font-bold"> Dotlabs()</span>
-    </div>
+    <DotlabsLogo />
     <nav class="flex gap-x-4">
       <span class="hover:font-semibold"
-        ><Trans i18nKey="header.nav.home">Inicio</Trans></span
+        ><Trans i18nKey="nav.home">Inicio</Trans></span
       >
       <span class="hover:font-semibold"
-        ><Trans i18nKey="header.nav.date">Fecha</Trans></span
+        ><Trans i18nKey="nav.date">Fecha</Trans></span
       >
       <!-- Does not require translation -->
       <span class="hover:font-semibold">Teams</span>
@@ -35,22 +31,19 @@ import { LanguageSelector, Trans } from "astro-i18next/components";
       <!-- Does not require translation -->
       <span class="hover:font-semibold">Map</span>
     </nav>
-    <div class="flex gap-x-5">
-      <img src={facebookIcon} alt="Facebook" />
-      <img src={githubIcon} alt="Github" />
-      <img src={instagramIcon} alt="Instagram" />
+    <Socials>
       <LanguageSelector showFlag={true} class="languaje" />
-    </div>
+    </Socials>
+
+    <style>
+      .languaje {
+        border-radius: 0.5rem;
+        padding: 0.3rem 0.6rem;
+      }
+
+      .languaje:focus {
+        outline: 2px solid blue;
+      }
+    </style>
   </div>
 </header>
-
-<style>
-  .languaje {
-    border-radius: 0.5rem;
-    padding: 0.3rem 0.6rem;
-  }
-
-  .languaje:focus {
-    outline: 2px solid blue;
-  }
-</style>

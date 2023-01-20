@@ -1,0 +1,39 @@
+---
+import twitterIcon from "../assets/social-media/twitter.svg";
+import twitterIconWhite from "../assets/social-media/twitter-white.svg";
+import githubIcon from "../assets/social-media/github.svg";
+import githubIconWhite from "../assets/social-media/github-white.svg";
+import instagramIcon from "../assets/social-media/instagram.svg";
+import instagramIconWhite from "../assets/social-media/instagram-white.svg";
+
+export interface Props {
+  white?: boolean;
+}
+
+const { white } = Astro.props;
+---
+
+<div class="flex gap-x-5">
+  <a
+    class="flex justify-center"
+    href="https://github.com/EdisonBedoya98/dotlabs-medellin-hackathon-landing"
+    target="_blank"
+  >
+    <img src={white ? twitterIconWhite : twitterIcon} alt="Twitter" />
+  </a>
+  <a
+    class="flex justify-center"
+    href="https://github.com/EdisonBedoya98/dotlabs-medellin-hackathon-landing"
+    target="_blank"
+  >
+    <img src={white ? githubIconWhite : githubIcon} alt="Github" />
+  </a>
+  <a
+    class="flex justify-center"
+    href="https://instagram.com/dotlabsacademy_?igshid=YmMyMTA2M2Y="
+    target="_blank"
+  >
+    <img src={white ? instagramIconWhite : instagramIcon} alt="Instagram" />
+  </a>
+  <slot />
+</div>
