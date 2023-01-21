@@ -1,0 +1,16 @@
+---
+import menuIcon from "../assets/icons/menu.svg";
+import DotlabsLogo from "./DotlabsLogo.astro";
+let isShowMenu = false;
+---
+
+<img
+  src={menuIcon}
+  alt="Menu button "
+  class="lg:hidden justify-self-end cursor-pointer"
+/>
+<div class="absolute top-0 right-0 w-3/4 bg-red-700">
+  <div>
+    <DotlabsLogo />
+  </div>
+</div>

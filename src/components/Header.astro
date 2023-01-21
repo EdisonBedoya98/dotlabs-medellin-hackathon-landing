@@ -1,9 +1,9 @@
 ---
 import { backgroundGradientColor } from "../utils/constants";
-import dotlabsHandIcon from "../assets/icons/dotlabs-hand.svg";
 import Socials from "./Socials.astro";
 import { LanguageSelector, Trans } from "astro-i18next/components";
 import DotlabsLogo from "./DotlabsLogo.astro";
+import MenuMobile from "./MenuMobile.astro";
 ---
 
 <header class="h-16 sticky top-0 backdrop-blur-[2px] z-40">
@@ -12,10 +12,10 @@ import DotlabsLogo from "./DotlabsLogo.astro";
   >
   </div>
   <div
-    class={`grid grid-cols-header items-center  max-w-[90rem] mx-auto px-12 h-full relative text-main `}
+    class={`grid grid-cols-2  lg:grid-cols-header items-center  max-w-[90rem] mx-auto px-12 h-full relative text-main `}
   >
     <DotlabsLogo />
-    <nav class="flex gap-x-4 justify-self-center">
+    <nav class="hidden lg:flex gap-x-4 justify-self-center">
       <span class="hover:font-semibold"
         ><Trans i18nKey="nav.home">Inicio</Trans></span
       >
@@ -31,6 +31,7 @@ import DotlabsLogo from "./DotlabsLogo.astro";
       <!-- Does not require translation -->
       <span class="hover:font-semibold">Map</span>
     </nav>
+    <MenuMobile />
     <Socials>
       <LanguageSelector
         showFlag={true}
