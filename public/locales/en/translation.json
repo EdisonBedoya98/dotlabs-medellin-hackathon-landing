@@ -20,6 +20,10 @@
       "secondTextContent": "The main goal of the project is that the best ideas can be hatched and developed."
     }
   },
+  "prizeCard": {
+    "subtitle": "IN PRIZES FOR THIS EVENT",
+    "textContent": "Cooperate, build and win!"
+  },
   "ticketCard": {
     "title": "GET YOUR TICKET",
     "textContent": "Don't wait anymore and get your ticket to now!",

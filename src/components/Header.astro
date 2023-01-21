@@ -16,20 +16,19 @@ import MenuMobile from "./MenuMobile.astro";
   >
     <DotlabsLogo />
     <nav class="hidden lg:flex gap-x-4 justify-self-center">
-      <span class="hover:font-semibold"
-        ><Trans i18nKey="nav.home">Inicio</Trans></span
+       <a href="#home" class="hover:font-semibold"
+        ><Trans i18nKey="nav.home">Inicio</Trans></a>
+      <a href="#date" class="hover:font-semibold"
+        ><Trans i18nKey="nav.date">Fecha</Trans></a
       >
-      <span class="hover:font-semibold"
-        ><Trans i18nKey="nav.date">Fecha</Trans></span
-      >
       <!-- Does not require translation -->
-      <span class="hover:font-semibold">Teams</span>
+      <a href="#team" class="hover:font-semibold">Team</a>
       <!-- Does not require translation -->
-      <span class="hover:font-semibold">Ticket</span>
+      <a href="#ticket" class="hover:font-semibold">Ticket</a>
       <!-- Does not require translation -->
-      <span class="hover:font-semibold">FAQ</span>
+      <a href="#faq" class="hover:font-semibold">FAQ</a>
       <!-- Does not require translation -->
-      <span class="hover:font-semibold">Map</span>
+      <a href="#map" class="hover:font-semibold">Map</a>
     </nav>
     <MenuMobile />
     <Socials>

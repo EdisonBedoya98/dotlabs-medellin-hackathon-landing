@@ -20,6 +20,10 @@
       "secondTextContent": "El objetivo principal del proyecto es que las mejores ideas puedan ser incubadas y desarrolladas."
     }
   },
+  "prizeCard": {
+    "subtitle": "EN PREMIOS PARA ESTE EVENTO",
+    "textContent": "¡Colabora, crea y gana!"
+  },
   "ticketCard": {
     "title": "OBTÉN TU TICKET",
     "textContent": "¡No esperes más y obtén tu ticket para participar!",
