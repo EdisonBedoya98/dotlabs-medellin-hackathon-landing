@@ -18,6 +18,12 @@ module.exports = {
         "back-gray": "rgb(244 244 244 / 1)",
         "gray-font": "rgb(70 70 70 / 1)", */
       },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+
+        // Complex site-specific column configuration
+        header: "15rem  1fr 15rem",
+      },
     },
   },
   plugins: [],
