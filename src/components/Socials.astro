@@ -13,7 +13,8 @@ export interface Props {
 const { white } = Astro.props;
 ---
 
-<div class="flex gap-x-5">
+<div class="flex gap-x-5 w-60 justify-self-end">
+  <slot />
   <a
     class="flex justify-center"
     href="https://github.com/EdisonBedoya98/dotlabs-medellin-hackathon-landing"
@@ -35,5 +36,4 @@ const { white } = Astro.props;
   >
     <img src={white ? instagramIconWhite : instagramIcon} alt="Instagram" />
   </a>
-  <slot />
 </div>

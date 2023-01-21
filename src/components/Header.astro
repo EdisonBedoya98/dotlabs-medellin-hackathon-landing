@@ -12,10 +12,10 @@ import DotlabsLogo from "./DotlabsLogo.astro";
   >
   </div>
   <div
-    class={`flex justify-between items-center max-w-[90rem] mx-auto px-12 h-full relative text-main `}
+    class={`grid grid-cols-header items-center  max-w-[90rem] mx-auto px-12 h-full relative text-main `}
   >
     <DotlabsLogo />
-    <nav class="flex gap-x-4">
+    <nav class="flex gap-x-4 justify-self-center">
       <span class="hover:font-semibold"
         ><Trans i18nKey="nav.home">Inicio</Trans></span
       >
@@ -32,18 +32,10 @@ import DotlabsLogo from "./DotlabsLogo.astro";
       <span class="hover:font-semibold">Map</span>
     </nav>
     <Socials>
-      <LanguageSelector showFlag={true} class="languaje" />
+      <LanguageSelector
+        showFlag={true}
+        class="cursor-pointer rounded-lg p-1 bg-transparent focus:outline focus:outline-main focus:outline-2"
+      />
     </Socials>
-
-    <style>
-      .languaje {
-        border-radius: 0.5rem;
-        padding: 0.3rem 0.6rem;
-      }
-
-      .languaje:focus {
-        outline: 2px solid blue;
-      }
-    </style>
   </div>
 </header>
