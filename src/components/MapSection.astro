@@ -6,10 +6,11 @@ import Map from "./Map.astro";
 
 <section
   id="map"
-  class="h-fit mb-36 min-h-[20rem] flex justify-center relative"
+  class="h-fit mb-36 min-h-[20rem] max-w-[55rem] mx-auto flex justify-center relative"
 >
-  <div class="grid grid-cols-1 gap-10 md:grid-cols-2 items-center z-20">
-    <div class="flex flex-col gap-5 md:w-3/4 my-auto w-full">
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center z-20 gap-10">
+    <div class="flex flex-col gap-5 my-auto w-full">
+
       <h1 class={`text-left text-5xl font-extrabold ${textGradient}`}>
         <Trans i18nKey="mapSection.title">¡No te pierdas!</Trans>
       </h1>
