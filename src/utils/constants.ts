@@ -5,3 +5,5 @@ export const textGradient =
 // ! can be used as footer bg
 export const mainGradient =
   "bg-gradient-to-tr from-main via-main to-orange-dimmed";
+export const yellowTextGradient =
+  "text-transparent bg-clip-text bg-gradient-to-b from-yellow-custom to-orange-dimmed";

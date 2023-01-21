@@ -4,11 +4,12 @@ import Countdown from "../components/Countdown.astro";
 import { backgroundGradientColor } from "../utils/constants";
 import i18next from "i18next";
 import { HeadHrefLangs } from "astro-i18next/components";
+import Footer from "../components/Footer.astro";
 const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang={i18next.language}>
+<html lang={i18next.language} class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -21,9 +22,9 @@ const { title } = Astro.props;
   <body class={`w-full mx-auto ${backgroundGradientColor}`}>
     <Header />
     <Countdown />
-    <main class="max-w-[90rem] mx-auto px-9">
+    <main class="max-w-[80rem] mx-auto px-9">
       <slot />
     </main>
-    <footer>Soy el footer prros</footer>
+    <Footer />
   </body>
 </html>

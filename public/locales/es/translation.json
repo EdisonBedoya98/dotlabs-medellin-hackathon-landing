@@ -3,11 +3,9 @@
     "invitation": "¿Te sumas al reto de participar en la hackathon blockchain más grande de Latinoamérica?",
     "button": "Comenzar"
   },
-  "header": {
-    "nav": {
-      "home": "Inicio",
-      "date": "Fecha"
-    }
+  "nav": {
+    "home": "Inicio",
+    "date": "Fecha"
   },
   "cardInformation": {
     "date": "24 y 25 DE MARZO",
@@ -22,9 +20,13 @@
       "secondTextContent": "El objetivo principal del proyecto es que las mejores ideas puedan ser incubadas y desarrolladas."
     }
   },
+  "prizeCard": {
+    "subtitle": "EN PREMIOS PARA ESTE EVENTO",
+    "textContent": "¡Colabora, crea y gana!"
+  },
   "ticketCard": {
     "title": "OBTÉN TU TICKET",
-    "firstTextContent": "¡No esperes más y obtén tu ticket para participar!",
+    "textContent": "¡No esperes más y obtén tu ticket para participar!",
     "button": "Adquirir"
   },
 
@@ -87,6 +89,10 @@
     "title": "OBTÉN TU TICKET",
     "TextContent": "¡No esperes más y obtén tu ticket para participar!"
    
+  },
+  "mapSection": {
+    "title": "¡No te pierdas!",
+    "textContent": "¡El hackhaton se llevará a cabo en un lugar único y especialmente diseñado para este evento! A través de Google Maps, podrás ver en detalle la ubicación del evento y obtener direcciones para llegar al lugar. No te pierdas esta oportunidad única de participar en el hackhaton en el lugar perfecto. ¡Te esperamos allí!"
   }
   
 }

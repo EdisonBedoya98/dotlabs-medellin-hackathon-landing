@@ -1,7 +1,6 @@
 ---
 import { textGradient } from "../utils/constants";
-import i18next, { t } from "i18next";
-import { Trans } from "astro-i18next/components";
+
 export interface Props {
   firstTextContent: any;
   secondTextContent: any;
@@ -10,17 +9,26 @@ export interface Props {
   reverse?: boolean;
   mainTitle?: any;
   secundaryTitle?: any;
+  sectionId: string;
 }
 
-const { firstTextContent, secondTextContent, imgPath, imgAlt, reverse, mainTitle, secundaryTitle } = Astro.props;
+const {
+  firstTextContent,
+  secondTextContent,
+  imgPath,
+  imgAlt,
+  reverse,
+  mainTitle,
+  secundaryTitle,
+  sectionId,
+} = Astro.props;
 ---
 
 <section
-  class={`h-screen min-h-[20rem] flex justify-between ${
-    reverse ? "flex-row-reverse" : null
-  }`}
+  id={sectionId}
+  class={`h-fit my-20 md:my-40 min-h-[20rem] max-w-[55rem] mx-auto grid grid-cols-1 gap-12 md:grid-cols-2 items-center justify-items-center`}
 >
-  <div class="w-1/2 max-w-sm flex flex-col m-auto">
+  <div class={`flex flex-col m-auto ${reverse && "lg:col-start-2"}`}>
     {
       mainTitle ? (
         <h1 class={`text-5xl text-start font-extrabold ${textGradient}`}>
@@ -30,7 +38,7 @@ const { firstTextContent, secondTextContent, imgPath, imgAlt, reverse, mainTitle
     }
     {
       secundaryTitle ? (
-        <h2 class={`text-4xl text-start font-extrabold ${textGradient}`}>
+        <h2 class={`text-4xl text-start font-extrabold pb-2 ${textGradient}`}>
           {secundaryTitle}
         </h2>
       ) : null
@@ -41,7 +49,10 @@ const { firstTextContent, secondTextContent, imgPath, imgAlt, reverse, mainTitle
       <p>{secondTextContent}</p>
     </div>
   </div>
-  <div class="w-1/2 my-auto">
-    <img src={imgPath} alt={imgAlt} />
-  </div>
+
+  <img
+    src={imgPath}
+    alt={imgAlt}
+    class={`${reverse && "md:col-start-1 md:row-start-1"}`}
+  />
 </section>

@@ -1,10 +1,9 @@
 ---
 import { backgroundGradientColor } from "../utils/constants";
-import dotlabsHandIcon from "../assets/icons/dotlabs-hand.svg";
-import facebookIcon from "../assets/social-media/facebook.svg";
-import githubIcon from "../assets/social-media/github.svg";
-import instagramIcon from "../assets/social-media/instagram.svg";
+import Socials from "./Socials.astro";
 import { LanguageSelector, Trans } from "astro-i18next/components";
+import DotlabsLogo from "./DotlabsLogo.astro";
+import MenuMobile from "./MenuMobile.astro";
 ---
 
 <header class="h-16 sticky top-0 backdrop-blur-[2px] z-40">
@@ -13,44 +12,30 @@ import { LanguageSelector, Trans } from "astro-i18next/components";
   >
   </div>
   <div
-    class={`flex justify-between items-center max-w-[90rem] mx-auto px-12 h-full relative text-main `}
+    class={`grid grid-cols-2  lg:grid-cols-header items-center  max-w-[90rem] mx-auto px-12 h-full relative text-main `}
   >
-    <div class="flex items-center gap-x-4">
-      <img src={dotlabsHandIcon} alt="Dotlabs" />
-      <span class="font-bold"> Dotlabs()</span>
-    </div>
-    <nav class="flex gap-x-4">
-      <span class="hover:font-semibold"
-        ><Trans i18nKey="header.nav.home">Inicio</Trans></span
-      >
-      <span class="hover:font-semibold"
-        ><Trans i18nKey="header.nav.date">Fecha</Trans></span
+    <DotlabsLogo />
+    <nav class="hidden lg:flex gap-x-4 justify-self-center">
+       <a href="#home" class="hover:font-semibold"
+        ><Trans i18nKey="nav.home">Inicio</Trans></a>
+      <a href="#date" class="hover:font-semibold"
+        ><Trans i18nKey="nav.date">Fecha</Trans></a
       >
       <!-- Does not require translation -->
-      <span class="hover:font-semibold">Teams</span>
+      <a href="#team" class="hover:font-semibold">Team</a>
       <!-- Does not require translation -->
-      <span class="hover:font-semibold">Ticket</span>
+      <a href="#ticket" class="hover:font-semibold">Ticket</a>
       <!-- Does not require translation -->
-      <span class="hover:font-semibold">FAQ</span>
+      <a href="#faq" class="hover:font-semibold">FAQ</a>
       <!-- Does not require translation -->
-      <span class="hover:font-semibold">Map</span>
+      <a href="#map" class="hover:font-semibold">Map</a>
     </nav>
-    <div class="flex gap-x-5">
-      <img src={facebookIcon} alt="Facebook" />
-      <img src={githubIcon} alt="Github" />
-      <img src={instagramIcon} alt="Instagram" />
-      <LanguageSelector showFlag={true} class="languaje" />
-    </div>
+    <MenuMobile />
+    <Socials>
+      <LanguageSelector
+        showFlag={true}
+        class="cursor-pointer rounded-lg p-1 bg-transparent focus:outline focus:outline-main focus:outline-2"
+      />
+    </Socials>
   </div>
 </header>
-
-<style>
-  .languaje {
-    border-radius: 0.5rem;
-    padding: 0.3rem 0.6rem;
-  }
-
-  .languaje:focus {
-    outline: 2px solid blue;
-  }
-</style>

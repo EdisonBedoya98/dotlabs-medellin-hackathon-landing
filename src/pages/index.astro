@@ -8,7 +8,11 @@ import { textGradient } from "../utils/constants";
 import TicketCard from "../components/TicketCard.astro";
 import { t, changeLanguage } from "i18next";
 import { Trans } from "astro-i18next/components";
+
 import FaqList from "../components/FaqList.astro";
+import MapSection from "../components/MapSection.astro";
+import PrizeCard from "../components/PrizeCard.astro";
+
 
 changeLanguage("es");
 ---
@@ -16,6 +20,7 @@ changeLanguage("es");
 <Layout title="Dotlabs(Medellín)">
   <Home />
   <CardInformation
+    sectionId="date"
     mainTitle={t("cardInformation.card1.title")}
     firstTextContent={t("cardInformation.card1.firstTextContent")}
     secondTextContent={t("cardInformation.card1.secondTextContent")}
@@ -29,6 +34,7 @@ changeLanguage("es");
     </div>
   </CardInformation>
   <CardInformation
+    sectionId="team"
     reverse={true}
     secundaryTitle={t("cardInformation.card2.title")}
     firstTextContent={t("cardInformation.card2.firstTextContent")}
@@ -36,9 +42,8 @@ changeLanguage("es");
     imgPath={cardInformationImage_2}
     imgAlt="Image cannot be rendered"
   />
+  <PrizeCard />
   <TicketCard />
-
   <FaqList />
-
-
+  <MapSection />
 </Layout>
