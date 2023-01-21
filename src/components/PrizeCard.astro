@@ -1,0 +1,42 @@
+---
+import { mainGradient, yellowTextGradient } from "../utils/constants";
+import titleSubline from "../assets/images/prize_title_subline.svg";
+import smallBlocksTop from "../assets/images/background_small_blocks_top.svg";
+import smallBlocksBottom from "../assets/images/background_small_block_bottom.svg";
+import { Trans } from "astro-i18next/components";
+---
+
+<section class="h-fit my-32 min-h-[20rem] flex">
+  <div
+    class={`flex flex-col w-full relative rounded-3xl justify-center shadow-xl ${mainGradient}`}
+  >
+    <img
+      class="object-fill absolute -top-16 -left-12"
+      src={smallBlocksTop}
+      alt="The image cannot be rendered"
+    />
+    <div class="flex flex-col z-10">
+      <h1
+        class={`text-5xl md:text-7xl text-center font-extrabold ${yellowTextGradient}`}
+      >
+        50K USD
+      </h1>
+      <img
+        class="m-auto"
+        src={titleSubline}
+        alt="The image cannot be rendered"
+      />
+    </div>
+    <h2 class="text-2xl md:text-4xl font-bold text-center text-white z-10">
+      <Trans i18nKey="prizeCard.subtitle">EN PREMIOS PARA ESTE EVENTO</Trans>
+    </h2>
+    <p class="text-center text-yellow-custom z-10">
+      <Trans i18nKey="prizeCard.textContent">¡Colabora, crea y gana!</Trans>
+    </p>
+    <img
+      class="object-fill absolute bottom-0"
+      src={smallBlocksBottom}
+      alt="The image cannot be rendered"
+    />
+  </div>
+</section>

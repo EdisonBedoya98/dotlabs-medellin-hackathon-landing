@@ -9,6 +9,7 @@ import TicketCard from "../../components/TicketCard.astro";
 import { t, changeLanguage } from "i18next";
 import { Trans } from "astro-i18next/components";
 import MapSection from "../../components/MapSection.astro";
+import PrizeCard from "../../components/PrizeCard.astro";
 
 changeLanguage("en");
 ---
@@ -36,6 +37,7 @@ changeLanguage("en");
     imgPath={cardInformationImage_2}
     imgAlt="Image cannot be rendered"
   />
+  <PrizeCard />
   <TicketCard />
   <MapSection />
 </Layout>

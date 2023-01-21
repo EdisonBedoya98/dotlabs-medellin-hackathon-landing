@@ -9,6 +9,7 @@ export interface Props {
   reverse?: boolean;
   mainTitle?: any;
   secundaryTitle?: any;
+  sectionId: string;
 }
 
 const {
@@ -19,10 +20,12 @@ const {
   reverse,
   mainTitle,
   secundaryTitle,
+  sectionId,
 } = Astro.props;
 ---
 
 <section
+  id={sectionId}
   class={`h-fit my-20 md:my-40 min-h-[20rem] grid grid-cols-1 gap-12 md:grid-cols-2 items-center justify-items-center`}
 >
   <div class={`flex flex-col m-auto ${reverse && "lg:col-start-2"}`}>
