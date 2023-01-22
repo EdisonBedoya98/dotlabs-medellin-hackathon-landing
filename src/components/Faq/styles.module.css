@@ -1,0 +1,15 @@
+#answer {
+  animation: appear-in 0.3s ease-in-out;
+}
+
+@keyframes appear-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  top {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

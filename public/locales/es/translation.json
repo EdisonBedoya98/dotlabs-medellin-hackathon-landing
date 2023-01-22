@@ -29,70 +29,46 @@
     "textContent": "¡No esperes más y obtén tu ticket para participar!",
     "button": "Adquirir"
   },
-
-  "faqList1": {
-    "title": "¿Que es el Hackhaton?",
-    "firstTextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList2": {
-    "title": "¿Quién puede participar en un hackathon?",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList3": {
-    "title": "¿Cuánto tiempo dura un hackathon?",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList4": {
-    "title": "¿Quién puede participar en un hackathon?",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList5": {
-    "title": "OBTÉN TU TICKET",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList6": {
-    "title": "OBTÉN TU TICKET",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList7": {
-    "title": "OBTÉN TU TICKET",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList8": {
-    "title": "OBTÉN TU TICKET",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList9": {
-    "title": "OBTÉN TU TICKET",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList10": {
-    "title": "OBTÉN TU TICKET",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList11": {
-    "title": "OBTÉN TU TICKET",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
-  },
-  "faqList12": {
-    "title": "OBTÉN TU TICKET",
-    "TextContent": "¡No esperes más y obtén tu ticket para participar!"
-   
+  "faqSection": {
+    "title": "¿Tienes dudas sobre el hackathon?",
+    "subtitle": "Aquí encontrarás las respuestas",
+    "faqs": {
+      "faq1": {
+        "question": "¿Que es el Hackhaton?",
+        "answer": "Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq2": {
+        "question": "¿Que es el Hackhaton?",
+        "answer": "Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq3": {
+        "question": "¿Que es el Hackhaton?",
+        "answer": "Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq4": {
+        "question": "¿Que es el Hackhaton?",
+        "answer": "Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq5": {
+        "question": "¿Que es el Hackhaton?",
+        "answer": "Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq6": {
+        "question": "¿Que es el Hackhaton?",
+        "answer": "Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq7": {
+        "question": "¿Que es el Hackhaton?",
+        "answer": "Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq8": {
+        "question": "¿Que es el Hackhaton?",
+        "answer": "Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      }
+    }
   },
   "mapSection": {
     "title": "¡No te pierdas!",
     "textContent": "¡El hackhaton se llevará a cabo en un lugar único y especialmente diseñado para este evento! A través de Google Maps, podrás ver en detalle la ubicación del evento y obtener direcciones para llegar al lugar. No te pierdas esta oportunidad única de participar en el hackhaton en el lugar perfecto. ¡Te esperamos allí!"
   }
-  
 }
