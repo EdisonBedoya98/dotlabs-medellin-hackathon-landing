@@ -7,8 +7,8 @@ import { Trans } from "astro-i18next/components";
 export interface Props {}
 ---
 
-<section class={`mb-32 flex flex-col shadow-xl bg-white`}>
-  <div class="m-16">
+<section class={`mb-32 flex flex-col shadow-lg bg-white`}>
+  <div class="m-8 md:m-16">
     <div class="flex flex-col mb-20">
       <h1
         class={`text-center text-3xl md:text-4xl font-extrabold ${textGradient}`}
@@ -25,34 +25,42 @@ export interface Props {}
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       <Faq
+        id={1}
         question={t("faqSection.faqs.faq1.question")}
         answer={t("faqSection.faqs.faq1.answer")}
       />
       <Faq
+        id={2}
         question={t("faqSection.faqs.faq2.question")}
         answer={t("faqSection.faqs.faq2.answer")}
       />
       <Faq
+        id={3}
         question={t("faqSection.faqs.faq3.question")}
         answer={t("faqSection.faqs.faq3.answer")}
       />
       <Faq
+        id={4}
         question={t("faqSection.faqs.faq4.question")}
         answer={t("faqSection.faqs.faq4.answer")}
       />
       <Faq
+        id={5}
         question={t("faqSection.faqs.faq5.question")}
         answer={t("faqSection.faqs.faq5.answer")}
       />
       <Faq
+        id={6}
         question={t("faqSection.faqs.faq6.question")}
         answer={t("faqSection.faqs.faq6.answer")}
       />
       <Faq
+        id={7}
         question={t("faqSection.faqs.faq7.question")}
         answer={t("faqSection.faqs.faq7.answer")}
       />
       <Faq
+        id={8}
         question={t("faqSection.faqs.faq8.question")}
         answer={t("faqSection.faqs.faq8.answer")}
       />
