@@ -3,6 +3,7 @@ import { Trans } from "astro-i18next/components";
 import { textGradient } from "../utils/constants";
 import BackgroundBlockLeft from "../assets/images/background_blocks_left.svg";
 import BackgroundBlockRigth from "../assets/images/background_blocks_rigth.svg";
+import ticketIcon from "../assets/icons/ticket-icon.svg";
 ---
 
 <section id="ticket" class="h-screen min-h-[20rem] flex justify-between">
@@ -25,8 +26,8 @@ import BackgroundBlockRigth from "../assets/images/background_blocks_rigth.svg";
       </Trans>
     </p>
     <button
-      class={`w-[300px] gap-3 rounded-2xl py-2 px-12 flex place-self-center justify-center text-white mt-10 bg-main z-10`}
-      ><img src="/src/assets/icons/ticket-icon.svg" alt="Alt text" /><Trans
+      class={`w-max md:w-[300px] gap-3 rounded-2xl py-2 px-12 flex place-self-center justify-center text-white mt-10 bg-main z-10`}
+      ><img src={ticketIcon} alt="Alt text" /><Trans
         i18nKey="ticketCard.button"
       >
         Adquirir
