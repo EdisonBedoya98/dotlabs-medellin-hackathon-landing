@@ -1,0 +1,16 @@
+---
+export interface Props {
+  id: string;
+  idTo: string;
+  content: string;
+}
+
+const { id, idTo, content } = Astro.props;
+---
+
+<a
+  id={`${id}`}
+  href={`#${idTo}`}
+  class="hover:font-semibold text-main py-2 pl-3 border-b-[1px] border-black/30"
+  >{content}</a
+>
