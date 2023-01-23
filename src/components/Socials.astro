@@ -8,12 +8,13 @@ import instagramIconWhite from "../assets/social-media/instagram-white.svg";
 
 export interface Props {
   white?: boolean;
+  customStyles?: string;
 }
 
-const { white } = Astro.props;
+const { white, customStyles } = Astro.props;
 ---
 
-<div class="hidden lg:flex gap-x-5 w-60 justify-self-end">
+<div class={`flex gap-x-5 w-60 justify-self-end ${customStyles ?? ""}`}>
   <slot />
   <a
     class="flex justify-center"

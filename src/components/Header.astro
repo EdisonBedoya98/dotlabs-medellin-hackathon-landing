@@ -1,23 +1,32 @@
 ---
 import { backgroundGradientColor } from "../utils/constants";
 import Socials from "./Socials.astro";
+import menuIcon from "../assets/icons/menu.svg";
 import { LanguageSelector, Trans } from "astro-i18next/components";
 import DotlabsLogo from "./DotlabsLogo.astro";
 import MenuMobile from "./MenuMobile.astro";
 ---
 
-<header class="h-16 sticky top-0 backdrop-blur-[2px] z-40">
+<header class="h-16 sticky top-0 backdrop-blur-[2px] z-50">
+  <div
+    id="bgMobileMenu"
+    class="hidden absolute top-0 w-screen h-screen bg-black opacity-50 lg:hidden z-[60]"
+  >
+  </div>
+
   <div
     class={`absolute top-0 w-full h-full ${backgroundGradientColor} opacity-50 `}
   >
   </div>
+
   <div
-    class={`grid grid-cols-2  lg:grid-cols-header items-center  max-w-[90rem] mx-auto px-12 h-full relative text-main `}
+    class={`grid grid-cols-2  lg:grid-cols-header items-center  max-w-[90rem] mx-auto px-4 lg:px-12 h-full relative text-main `}
   >
     <DotlabsLogo />
     <nav class="hidden lg:flex gap-x-4 justify-self-center">
-       <a href="#home" class="hover:font-semibold"
-        ><Trans i18nKey="nav.home">Inicio</Trans></a>
+      <a href="#home" class="hover:font-semibold"
+        ><Trans i18nKey="nav.home">Inicio</Trans></a
+      >
       <a href="#date" class="hover:font-semibold"
         ><Trans i18nKey="nav.date">Fecha</Trans></a
       >
@@ -30,8 +39,14 @@ import MenuMobile from "./MenuMobile.astro";
       <!-- Does not require translation -->
       <a href="#map" class="hover:font-semibold">Map</a>
     </nav>
+    <img
+      id="menuMobileButton"
+      src={menuIcon}
+      alt="Menu button "
+      class="lg:hidden justify-self-end cursor-pointer"
+    />
     <MenuMobile />
-    <Socials>
+    <Socials customStyles="hidden lg:block">
       <LanguageSelector
         showFlag={true}
         class="cursor-pointer rounded-lg p-1 bg-transparent focus:outline focus:outline-main focus:outline-2"
@@ -39,3 +54,43 @@ import MenuMobile from "./MenuMobile.astro";
     </Socials>
   </div>
 </header>
+<script>
+  const menuMobile = document.getElementById("menuMobile") as HTMLDivElement;
+  const buttonMenuMobile = document.getElementById("menuMobileButton");
+  const buttonMenuMobileClose = document.getElementById(
+    "menuMobileCloseButton"
+  );
+
+  const homeButton = document.getElementById("ancorHome");
+  const dateButton = document.getElementById("ancorDate");
+  const teamButton = document.getElementById("ancorTeam");
+  const ticketButton = document.getElementById("ancorTicket");
+  const faqButton = document.getElementById("ancorFaq");
+  const mapButton = document.getElementById("ancorMap");
+
+  const bgMobileMenu = document.getElementById(
+    "bgMobileMenu"
+  ) as HTMLDivElement;
+
+  const hideMenu = () => {
+    bgMobileMenu.classList.add("hidden");
+    menuMobile.classList.add("hidden");
+  };
+  const showMenu = () => {
+    bgMobileMenu.classList.remove("hidden");
+    menuMobile.classList.remove("hidden");
+  };
+
+  buttonMenuMobile?.addEventListener("click", () => showMenu());
+  buttonMenuMobileClose?.addEventListener("click", () => hideMenu());
+
+  homeButton?.addEventListener("click", () => {
+    hideMenu();
+  });
+  homeButton?.addEventListener("click", () => hideMenu());
+  dateButton?.addEventListener("click", () => hideMenu());
+  teamButton?.addEventListener("click", () => hideMenu());
+  ticketButton?.addEventListener("click", () => hideMenu());
+  faqButton?.addEventListener("click", () => hideMenu());
+  mapButton?.addEventListener("click", () => hideMenu());
+</script>

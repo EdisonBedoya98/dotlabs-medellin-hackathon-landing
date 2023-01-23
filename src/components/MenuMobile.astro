@@ -1,16 +1,44 @@
 ---
 import menuIcon from "../assets/icons/menu.svg";
+import AncorNavHeader from "./AncorNavHeader.astro";
 import DotlabsLogo from "./DotlabsLogo.astro";
-let isShowMenu = false;
+import { t } from "i18next";
+import Socials from "./Socials.astro";
+import { LanguageSelector, Trans } from "astro-i18next/components";
 ---
 
-<img
-  src={menuIcon}
-  alt="Menu button "
-  class="lg:hidden justify-self-end cursor-pointer"
-/>
-<div class="lg:hidden absolute top-0 right-0 w-3/4 bg-red-700">
-  <div>
-    <DotlabsLogo />
+<div id="menuMobile" class="hidden z-[80]">
+  <div
+    class="lg:hidden absolute top-0 right-0 w-3/4 max-w-xs bg-white px-4 pt-5 min-h-[25rem] h-screen"
+  >
+    <div class="flex justify-between">
+      <DotlabsLogo />
+      <img
+        id="menuMobileCloseButton"
+        src={menuIcon}
+        alt="Menu button "
+        class="cursor-pointer"
+      />
+    </div>
+    <nav class="flex flex-col gap-x-4 border-t-[1px] border-black/30 mt-2">
+      <AncorNavHeader id="ancorHome" idTo="home" content={t("nav.home")} />
+      <AncorNavHeader id="ancorDate" idTo="date" content={t("nav.date")} />
+
+      <!-- Does not require translation -->
+      <AncorNavHeader id="ancorTeam" idTo="team" content="Team" />
+      <!-- Does not require translation -->
+      <AncorNavHeader id="ancorTicket" idTo="ticket" content="Ticket" />
+      <!-- Does not require translation -->
+      <AncorNavHeader id="ancorFaq" idTo="faq" content="FAQ" />
+      <!-- Does not require translation -->
+      <AncorNavHeader id="ancorMap" idTo="map" content="Map" />
+    </nav>
+
+    <Socials customStyles="flex-row-reverse pt-4">
+      <LanguageSelector
+        showFlag={true}
+        class="cursor-pointer rounded-lg p-1 bg-transparent focus:outline focus:outline-main focus:outline-2"
+      />
+    </Socials>
   </div>
 </div>
