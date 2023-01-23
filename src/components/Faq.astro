@@ -1,0 +1,69 @@
+---
+export interface Props {
+  question: string;
+  answer: string;
+}
+
+const { question, answer } = Astro.props;
+---
+
+<div id="faq">
+  <div class="toggler flex justify-between cursor-pointer">
+    <h1
+      class="toggler text-main font-bold text-xl md:text-2xl"
+      onclick="toggle"
+    >
+      {question}
+    </h1>
+    <span
+      class="toggler toggleIcon text-main font-bold text-xl md:text-2xl transition"
+      >+</span
+    >
+  </div>
+  <p class="answer mt-5 hidden">
+    {answer}
+  </p>
+  <div class="border-b border-slate-700 mt-5"></div>
+</div>
+
+<script>
+  const toggle = (e: any) => {
+    const answer = e?.target?.parentNode?.querySelector(
+      ".answer"
+    ) as HTMLParagraphElement | null;
+    const toggleIcon = e?.target?.parentNode?.querySelector(
+      ".toggleIcon"
+    ) as HTMLSpanElement | null;
+
+    if (answer?.classList.contains("hidden")) {
+      answer?.classList.remove("hidden");
+      toggleIcon ? (toggleIcon.textContent = "-") : null;
+    } else {
+      answer?.classList.add("hidden");
+      toggleIcon ? (toggleIcon.textContent = "+") : null;
+    }
+  };
+
+  const togglers = document.querySelectorAll(".toggler");
+  for (const toggler of togglers) {
+    toggler.addEventListener("click", toggle);
+  }
+</script>
+
+<style>
+  p {
+    animation: appear-in 0.2s ease-in-out;
+  }
+
+  @keyframes appear-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    top {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

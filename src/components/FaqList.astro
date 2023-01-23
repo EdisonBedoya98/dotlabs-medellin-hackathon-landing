@@ -1,6 +1,6 @@
 ---
 import { textGradient } from "../utils/constants";
-import Faq from "./Faq/Faq";
+import Faq from "./Faq.astro";
 import { t } from "i18next";
 import { Trans } from "astro-i18next/components";
 
@@ -25,42 +25,34 @@ export interface Props {}
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       <Faq
-        client:visible
         question={t("faqSection.faqs.faq1.question")}
         answer={t("faqSection.faqs.faq1.answer")}
       />
       <Faq
-        client:visible
         question={t("faqSection.faqs.faq2.question")}
         answer={t("faqSection.faqs.faq2.answer")}
       />
       <Faq
-        client:visible
         question={t("faqSection.faqs.faq3.question")}
         answer={t("faqSection.faqs.faq3.answer")}
       />
       <Faq
-        client:visible
         question={t("faqSection.faqs.faq4.question")}
         answer={t("faqSection.faqs.faq4.answer")}
       />
       <Faq
-        client:visible
         question={t("faqSection.faqs.faq5.question")}
         answer={t("faqSection.faqs.faq5.answer")}
       />
       <Faq
-        client:visible
         question={t("faqSection.faqs.faq6.question")}
         answer={t("faqSection.faqs.faq6.answer")}
       />
       <Faq
-        client:visible
         question={t("faqSection.faqs.faq7.question")}
         answer={t("faqSection.faqs.faq7.answer")}
       />
       <Faq
-        client:visible
         question={t("faqSection.faqs.faq8.question")}
         answer={t("faqSection.faqs.faq8.answer")}
       />
