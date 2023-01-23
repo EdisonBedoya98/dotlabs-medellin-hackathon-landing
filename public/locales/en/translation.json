@@ -29,6 +29,44 @@
     "textContent": "Don't wait anymore and get your ticket to now!",
     "button": "Register now"
   },
+  "faqSection": {
+    "title": "Do you have questions about the hackathon?",
+    "subtitle": "Here you will find the answers",
+    "faqs": {
+      "faq1": {
+        "question": "ENGLISH ¿Que es el Hackhaton?",
+        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq2": {
+        "question": "ENGLISH ¿Que es el Hackhaton?",
+        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq3": {
+        "question": "ENGLISH ¿Que es el Hackhaton?",
+        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq4": {
+        "question": "ENGLISH ¿Que es el Hackhaton?",
+        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq5": {
+        "question": "ENGLISH ¿Que es el Hackhaton?",
+        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq6": {
+        "question": "ENGLISH ¿Que es el Hackhaton?",
+        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq7": {
+        "question": "ENGLISH ¿Que es el Hackhaton?",
+        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      },
+      "faq8": {
+        "question": "ENGLISH ¿Que es el Hackhaton?",
+        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+      }
+    }
+  },
   "mapSection": {
     "title": "Don't get lost!",
     "textContent": "The hackathon will take place in a unique location specially designed for this event! Through Google Maps, you will be able to see in detail the location of the event and get directions to the venue. Don't miss this unique opportunity to participate in the hackhaton in the perfect place, we are waiting for you there!"

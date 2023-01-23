@@ -1,69 +1,69 @@
 ---
-import { backgroundGradientColor, textGradient } from "../utils/constants";
-import Faq from "./Faq.astro";
-import i18next, { t } from "i18next";
+import { textGradient } from "../utils/constants";
+import Faq from "./Faq/Faq";
+import { t } from "i18next";
 import { Trans } from "astro-i18next/components";
 
-export interface Props {
-
-}
+export interface Props {}
 ---
 
-<div
-  class={`w-full h-3/4 rounded-3xl flex flex-col bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 place-content-center shadow-xl ${backgroundGradientColor}`}
->
-  <h2 class="text-center text-7xl font-extrabold ${textGradient}">
-    ¿Tienes dudas sobre el hackathon?
-  </h2>
-  <p class="text-center text-3xl font-bold py-4">
-    Aquí encontrarás las respuestas
-  </p>
-  <div class="grid grid-cols-2 gap-10">
-
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
-
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
-
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
- <Faq 
- Title="Que es la hackaton?"
- TextContent={"welcome to esta hackaton"} />
-
-
-
-
-
+<section class={`mb-32 flex flex-col shadow-xl bg-white`}>
+  <div class="m-16">
+    <div class="flex flex-col mb-20">
+      <h1
+        class={`text-center text-3xl md:text-4xl font-extrabold ${textGradient}`}
+      >
+        <Trans i18nKey="faqSection.title">
+          ¿Tienes dudas sobre el hackathon?
+        </Trans>
+      </h1>
+      <h2 class="text-center text-xl md:text-2xl">
+        <Trans i18nKey="faqSection.subtitle">
+          Aquí encontrarás las respuestas
+        </Trans>
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <Faq
+        client:visible
+        question={t("faqSection.faqs.faq1.question")}
+        answer={t("faqSection.faqs.faq1.answer")}
+      />
+      <Faq
+        client:visible
+        question={t("faqSection.faqs.faq2.question")}
+        answer={t("faqSection.faqs.faq2.answer")}
+      />
+      <Faq
+        client:visible
+        question={t("faqSection.faqs.faq3.question")}
+        answer={t("faqSection.faqs.faq3.answer")}
+      />
+      <Faq
+        client:visible
+        question={t("faqSection.faqs.faq4.question")}
+        answer={t("faqSection.faqs.faq4.answer")}
+      />
+      <Faq
+        client:visible
+        question={t("faqSection.faqs.faq5.question")}
+        answer={t("faqSection.faqs.faq5.answer")}
+      />
+      <Faq
+        client:visible
+        question={t("faqSection.faqs.faq6.question")}
+        answer={t("faqSection.faqs.faq6.answer")}
+      />
+      <Faq
+        client:visible
+        question={t("faqSection.faqs.faq7.question")}
+        answer={t("faqSection.faqs.faq7.answer")}
+      />
+      <Faq
+        client:visible
+        question={t("faqSection.faqs.faq8.question")}
+        answer={t("faqSection.faqs.faq8.answer")}
+      />
+    </div>
   </div>
-
-
-</div>
+</section>
