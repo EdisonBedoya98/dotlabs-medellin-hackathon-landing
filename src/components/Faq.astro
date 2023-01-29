@@ -1,52 +1,51 @@
 ---
 export interface Props {
+  id: number;
   question: string;
   answer: string;
 }
 
-const { question, answer } = Astro.props;
+const { question, answer, id } = Astro.props;
 ---
 
 <div id="faq">
-  <div id="toggler" class="toggler flex justify-between cursor-pointer">
+  <div id={id.toString()} class="toggler flex justify-between cursor-pointer">
     <h1
-      class="toggler text-main font-bold text-xl md:text-2xl"
-      onclick="toggle"
+      id={id.toString()}
+      class="text-main font-bold text-xl md:text-2xl"
+      aria-disabled="false"
     >
       {question}
     </h1>
     <span
-      class="toggler toggleIcon text-main font-bold text-xl md:text-2xl transition"
-      >+</span
+      id={id.toString()}
+      class={`toggleIcon-${id} text-main font-bold text-xl md:text-2xl`}>+</span
     >
   </div>
-  <p class="answer mt-5 hidden">
+  <p id={`faq-${id}`} class="answer mt-5 hidden">
     {answer}
   </p>
   <div class="border-b border-slate-700 mt-5"></div>
 </div>
 
 <script>
-  const toggle = (e: any) => {
-    const answer = e?.target?.parentNode?.querySelector(
-      ".answer"
-    ) as HTMLParagraphElement | null;
-    const toggleIcon = e?.target?.parentNode?.querySelector(
-      ".toggleIcon"
-    ) as HTMLSpanElement | null;
+  const toggle = (e: Event) => {
+    const target = e.target as HTMLDivElement;
+    const answer = document.getElementById(`faq-${target.id}`);
+    const icon = document.querySelector(`.toggleIcon-${target.id}`);
 
-    if (answer?.classList.contains("hidden")) {
-      answer?.classList.remove("hidden");
-      toggleIcon ? (toggleIcon.textContent = "-") : null;
-    } else {
-      answer?.classList.add("hidden");
-      toggleIcon ? (toggleIcon.textContent = "+") : null;
+    if (answer && icon) {
+      answer.classList.toggle("hidden");
+      icon.textContent = answer.classList.contains("hidden") ? "+" : "-";
     }
   };
 
-  const toggler = document.getElementById(".toggler");
 
-  toggler?.addEventListener("click", toggle);
+  const togglers: NodeListOf<HTMLDivElement> | null =
+    document.querySelectorAll(".toggler");
+  for (const toggler of togglers) {
+    toggler.addEventListener("click", toggle);
+  }
 </script>
 
 <style>
