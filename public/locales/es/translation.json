@@ -7,6 +7,9 @@
     "home": "Inicio",
     "date": "Fecha"
   },
+  "countDown": {
+    "title": "Próximamente"
+  },
   "cardInformation": {
     "date": "24 y 25 DE MARZO",
     "card1": {
@@ -21,7 +24,7 @@
     }
   },
   "prizeCard": {
-    "title": "GRANDES PREMIOS",
+    "title": "? USD",
     "subtitle": "EN PREMIOS PARA ESTE EVENTO",
     "textContent": "¡Colabora, crea y gana!"
   },

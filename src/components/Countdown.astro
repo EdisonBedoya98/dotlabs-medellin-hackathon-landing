@@ -1,5 +1,6 @@
 ---
 import timerIcon from "../assets/icons/timer.svg";
+import { t } from "i18next";
 ---
 
 <section
@@ -9,7 +10,8 @@ import timerIcon from "../assets/icons/timer.svg";
     <img src={timerIcon} alt="Instagram" />
     <p>
       Solo faltan:<span class="text-yellow-custom font-semibold">
-        Próximamente <!-- 3 Días / 18 Hrs / 25seg -->
+        {t("countDown.title")}
+        <!-- 3 Días / 18 Hrs / 25seg -->
       </span>
     </p>
   </div>
