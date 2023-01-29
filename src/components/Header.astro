@@ -67,6 +67,10 @@ import { t } from "i18next";
     behavior: "smooth",
     block: "center",
   };
+  const scrollIntoviewConfMobile: ScrollIntoViewOptions = {
+    behavior: "smooth",
+    block: "nearest",
+  };
   const dotlabsLogoButton = document.getElementById("dotlabsLogo");
   const homeButton = document.getElementById("ancorDestopHome");
   const dateButton = document.getElementById("ancorDestopDate");
@@ -142,27 +146,27 @@ import { t } from "i18next";
   buttonMenuMobileClose?.addEventListener("click", () => hideMenu());
 
   homeButtonMobile?.addEventListener("click", () => {
-    home?.scrollIntoView(scrollIntoviewConf);
+    home?.scrollIntoView(scrollIntoviewConfMobile);
     hideMenu();
   });
   dateButtonMobile?.addEventListener("click", () => {
-    date?.scrollIntoView(scrollIntoviewConf);
+    date?.scrollIntoView(scrollIntoviewConfMobile);
     hideMenu();
   });
   teamButtonMobile?.addEventListener("click", () => {
-    team?.scrollIntoView(scrollIntoviewConf);
+    team?.scrollIntoView(scrollIntoviewConfMobile);
     hideMenu();
   });
   ticketButtonMobile?.addEventListener("click", () => {
-    ticket?.scrollIntoView(scrollIntoviewConf);
+    ticket?.scrollIntoView(scrollIntoviewConfMobile);
     hideMenu();
   });
   faqButtonMobile?.addEventListener("click", () => {
-    faq?.scrollIntoView(scrollIntoviewConf);
+    faq?.scrollIntoView(scrollIntoviewConfMobile);
     hideMenu();
   });
   mapButtonMobile?.addEventListener("click", () => {
-    map?.scrollIntoView(scrollIntoviewConf);
+    map?.scrollIntoView(scrollIntoviewConfMobile);
     hideMenu();
   });
 </script>
