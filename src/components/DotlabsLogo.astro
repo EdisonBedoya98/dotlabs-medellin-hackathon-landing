@@ -10,7 +10,7 @@ export interface Props {
 const { white, bigger } = Astro.props;
 ---
 
-<div class="flex items-center gap-x-4 w-48">
+<div id="dotlabsLogo" class="flex items-center gap-x-4 w-48 cursor-pointer">
   <img src={white ? dotlabsHandIconWhite : dotlabsHandIcon} alt="Dotlabs" />
   <span class={`font-bold ${white && "text-white"} ${bigger && "text-xl"}`}
     >Dotlabs()</span

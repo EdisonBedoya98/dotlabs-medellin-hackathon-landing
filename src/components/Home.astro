@@ -30,7 +30,7 @@ import { t } from "i18next";
       {t("home.invitation")}
     </p>
     <a
-      href="#date"
+      id="startButton"
       class="bg-main text-white px-16 py-3 rounded-lg flex items-center gap-x-4 z-10"
     >
       <img src={startIcon} alt="Start Icon" />
@@ -38,3 +38,14 @@ import { t } from "i18next";
     </a>
   </div>
 </section>
+
+<script>
+  const startButton = document.getElementById("startButton");
+  const date = document.getElementById("date");
+  startButton?.addEventListener("click", () =>
+    date?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    })
+  );
+</script>

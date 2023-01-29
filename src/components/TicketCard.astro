@@ -24,8 +24,10 @@ import { t } from "i18next";
       {t("ticketCard.textContent")}
     </p>
     <button
+      id="getTicket"
       class={`w-max md:w-[300px] gap-3 rounded-2xl py-2 px-12 flex place-self-center justify-center text-white mt-10 bg-main z-10`}
-      ><img src={ticketIcon} alt="Alt text" />
+    >
+      <img src={ticketIcon} alt="Alt text" />
       {t("ticketCard.button")}
     </button>
     <img
@@ -35,3 +37,11 @@ import { t } from "i18next";
     />
   </div>
 </section>
+
+<script>
+  const getTicketButton = document.getElementById("getTicket");
+
+  getTicketButton?.addEventListener("click", () =>
+    alert("Inscripciones aún no disponibles")
+  );
+</script>

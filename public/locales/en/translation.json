@@ -5,7 +5,8 @@
   },
   "nav": {
     "home": "Home",
-    "date": "Date"
+    "date": "Date",
+    "prize": "Prize"
   },
   "countDown": {
     "title": "Coming soon"

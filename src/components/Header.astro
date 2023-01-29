@@ -25,16 +25,26 @@ import { t } from "i18next";
   >
     <DotlabsLogo />
     <nav class="hidden lg:flex gap-x-4 justify-self-center">
-      <a href="#home" class="hover:font-semibold">{t("nav.home")}</a>
-      <a href="#date" class="hover:font-semibold">{t("nav.date")}</a>
+      <a id="ancorDestopHome" class="hover:font-semibold cursor-pointer"
+        >{t("nav.home")}</a
+      >
+      <a id="ancorDestopDate" class="hover:font-semibold cursor-pointer"
+        >{t("nav.date")}</a
+      >
       <!-- Does not require translation -->
-      <a href="#team" class="hover:font-semibold">Team</a>
+      <a id="ancorDestopTeam" class="hover:font-semibold cursor-pointer">Team</a
+      >
+      <a id="prizeDestopTeam" class="hover:font-semibold cursor-pointer"
+        >{t("nav.prize")}</a
+      >
       <!-- Does not require translation -->
-      <a href="#ticket" class="hover:font-semibold">Ticket</a>
+      <a id="ancorDestopTicket" class="hover:font-semibold cursor-pointer"
+        >Ticket</a
+      >
       <!-- Does not require translation -->
-      <a href="#faq" class="hover:font-semibold">FAQ</a>
+      <a id="ancorDestopFaq" class="hover:font-semibold cursor-pointer">FAQ</a>
       <!-- Does not require translation -->
-      <a href="#map" class="hover:font-semibold">Map</a>
+      <a id="ancorDestopMap" class="hover:font-semibold cursor-pointer">Map</a>
     </nav>
     <img
       id="menuMobileButton"
@@ -51,19 +61,69 @@ import { t } from "i18next";
     </Socials>
   </div>
 </header>
+
 <script>
+  const scrollIntoviewConf: ScrollIntoViewOptions = {
+    behavior: "smooth",
+    block: "center",
+  };
+  const dotlabsLogoButton = document.getElementById("dotlabsLogo");
+  const homeButton = document.getElementById("ancorDestopHome");
+  const dateButton = document.getElementById("ancorDestopDate");
+  const teamButton = document.getElementById("ancorDestopTeam");
+  const prizeButton = document.getElementById("prizeDestopTeam");
+  const ticketButton = document.getElementById("ancorDestopTicket");
+  const faqButton = document.getElementById("ancorDestopFaq");
+  const mapButton = document.getElementById("ancorDestopMap");
+
+  const home = document.getElementById("home");
+  const date = document.getElementById("date");
+  const team = document.getElementById("team");
+  const prize = document.getElementById("prize");
+  const ticket = document.getElementById("ticket");
+  const faq = document.getElementById("faq");
+  const map = document.getElementById("map");
+
+  dotlabsLogoButton?.addEventListener("click", () =>
+    home?.scrollIntoView(scrollIntoviewConf)
+  );
+  homeButton?.addEventListener("click", () =>
+    home?.scrollIntoView(scrollIntoviewConf)
+  );
+  dateButton?.addEventListener("click", () =>
+    date?.scrollIntoView(scrollIntoviewConf)
+  );
+  teamButton?.addEventListener("click", () =>
+    team?.scrollIntoView(scrollIntoviewConf)
+  );
+  prizeButton?.addEventListener("click", () =>
+    prize?.scrollIntoView(scrollIntoviewConf)
+  );
+  teamButton?.addEventListener("click", () =>
+    team?.scrollIntoView(scrollIntoviewConf)
+  );
+  ticketButton?.addEventListener("click", () =>
+    ticket?.scrollIntoView(scrollIntoviewConf)
+  );
+  faqButton?.addEventListener("click", () =>
+    faq?.scrollIntoView(scrollIntoviewConf)
+  );
+  mapButton?.addEventListener("click", () =>
+    map?.scrollIntoView(scrollIntoviewConf)
+  );
+
   const menuMobile = document.getElementById("menuMobile") as HTMLDivElement;
   const buttonMenuMobile = document.getElementById("menuMobileButton");
   const buttonMenuMobileClose = document.getElementById(
     "menuMobileCloseButton"
   );
 
-  const homeButton = document.getElementById("ancorHome");
-  const dateButton = document.getElementById("ancorDate");
-  const teamButton = document.getElementById("ancorTeam");
-  const ticketButton = document.getElementById("ancorTicket");
-  const faqButton = document.getElementById("ancorFaq");
-  const mapButton = document.getElementById("ancorMap");
+  const homeButtonMobile = document.getElementById("ancorHome");
+  const dateButtonMobile = document.getElementById("ancorDate");
+  const teamButtonMobile = document.getElementById("ancorTeam");
+  const ticketButtonMobile = document.getElementById("ancorTicket");
+  const faqButtonMobile = document.getElementById("ancorFaq");
+  const mapButtonMobile = document.getElementById("ancorMap");
 
   const bgMobileMenu = document.getElementById(
     "bgMobileMenu"
@@ -81,13 +141,28 @@ import { t } from "i18next";
   buttonMenuMobile?.addEventListener("click", () => showMenu());
   buttonMenuMobileClose?.addEventListener("click", () => hideMenu());
 
-  homeButton?.addEventListener("click", () => {
+  homeButtonMobile?.addEventListener("click", () => {
+    home?.scrollIntoView(scrollIntoviewConf);
     hideMenu();
   });
-  homeButton?.addEventListener("click", () => hideMenu());
-  dateButton?.addEventListener("click", () => hideMenu());
-  teamButton?.addEventListener("click", () => hideMenu());
-  ticketButton?.addEventListener("click", () => hideMenu());
-  faqButton?.addEventListener("click", () => hideMenu());
-  mapButton?.addEventListener("click", () => hideMenu());
+  dateButtonMobile?.addEventListener("click", () => {
+    date?.scrollIntoView(scrollIntoviewConf);
+    hideMenu();
+  });
+  teamButtonMobile?.addEventListener("click", () => {
+    team?.scrollIntoView(scrollIntoviewConf);
+    hideMenu();
+  });
+  ticketButtonMobile?.addEventListener("click", () => {
+    ticket?.scrollIntoView(scrollIntoviewConf);
+    hideMenu();
+  });
+  faqButtonMobile?.addEventListener("click", () => {
+    faq?.scrollIntoView(scrollIntoviewConf);
+    hideMenu();
+  });
+  mapButtonMobile?.addEventListener("click", () => {
+    map?.scrollIntoView(scrollIntoviewConf);
+    hideMenu();
+  });
 </script>

@@ -19,15 +19,62 @@ import { t } from "i18next";
     </div>
     <div class="flex gap-32 w-full">
       <ul class="flex flex-col gap-3">
-        <li class="cursor-pointer">{t("nav.home")}</li>
-        <li class="cursor-pointer">{t("nav.date")}</li>
-        <li class="cursor-pointer">Teams</li>
+        <li id="footerHome" class="cursor-pointer">{t("nav.home")}</li>
+        <li id="footerDate" class="cursor-pointer">{t("nav.date")}</li>
+        <li id="footerTeam" class="cursor-pointer">Teams</li>
+        <li id="footerPrize" class="cursor-pointer">Prize</li>
       </ul>
       <ul class="flex flex-col gap-3">
-        <li class="cursor-pointer">Ticket</li>
-        <li class="cursor-pointer">FAQ</li>
-        <li class="cursor-pointer">Map</li>
+        <li id="footerTicket" class="cursor-pointer">Ticket</li>
+        <li id="footerFaq" class="cursor-pointer">FAQ</li>
+        <li id="footerMap" class="cursor-pointer">Map</li>
       </ul>
     </div>
   </div>
 </footer>
+<script>
+  const scrollIntoviewConf: ScrollIntoViewOptions = {
+    behavior: "smooth",
+    block: "center",
+  };
+  const homeButton = document.getElementById("footerHome");
+  const dateButton = document.getElementById("footerDate");
+  const teamButton = document.getElementById("footerTeam");
+  const prizeButton = document.getElementById("footerPrize");
+  const ticketButton = document.getElementById("footerTicket");
+  const faqButton = document.getElementById("footerFaq");
+  const mapButton = document.getElementById("footerMap");
+
+  const home = document.getElementById("home");
+  const date = document.getElementById("date");
+  const team = document.getElementById("team");
+  const prize = document.getElementById("prize");
+  const ticket = document.getElementById("ticket");
+  const faq = document.getElementById("faq");
+  const map = document.getElementById("map");
+
+  homeButton?.addEventListener("click", () =>
+    home?.scrollIntoView(scrollIntoviewConf)
+  );
+  dateButton?.addEventListener("click", () =>
+    date?.scrollIntoView(scrollIntoviewConf)
+  );
+  teamButton?.addEventListener("click", () =>
+    team?.scrollIntoView(scrollIntoviewConf)
+  );
+  prizeButton?.addEventListener("click", () =>
+    prize?.scrollIntoView(scrollIntoviewConf)
+  );
+  teamButton?.addEventListener("click", () =>
+    team?.scrollIntoView(scrollIntoviewConf)
+  );
+  ticketButton?.addEventListener("click", () =>
+    ticket?.scrollIntoView(scrollIntoviewConf)
+  );
+  faqButton?.addEventListener("click", () =>
+    faq?.scrollIntoView(scrollIntoviewConf)
+  );
+  mapButton?.addEventListener("click", () =>
+    map?.scrollIntoView(scrollIntoviewConf)
+  );
+</script>
