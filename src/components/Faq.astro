@@ -8,7 +8,7 @@ const { question, answer } = Astro.props;
 ---
 
 <div id="faq">
-  <div class="toggler flex justify-between cursor-pointer">
+  <div id="toggler" class="toggler flex justify-between cursor-pointer">
     <h1
       class="toggler text-main font-bold text-xl md:text-2xl"
       onclick="toggle"
@@ -44,10 +44,9 @@ const { question, answer } = Astro.props;
     }
   };
 
-  const togglers = document.querySelectorAll(".toggler");
-  for (const toggler of togglers) {
-    toggler.addEventListener("click", toggle);
-  }
+  const toggler = document.getElementById(".toggler");
+
+  toggler?.addEventListener("click", toggle);
 </script>
 
 <style>
