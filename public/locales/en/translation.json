@@ -12,7 +12,7 @@
     "card1": {
       "title": "48 HOURS OF HACKATHON",
       "firstTextContent": "Join us for this event that will be on another level, it will be two days of hacking where disruptive ideas and innovative solutions to real problems will be generated through Blockchain technology. Challenge yourself with this great event, where you will be working hand by hand with the best blockchain developers in the industry.",
-      "secondTextContent": "The event is supported by the Ethereum foundation. Come and enjoy drinks and food while connecting with the brightest minds in the ecosystem."
+      "secondTextContent": "Come and enjoy drinks and food while connecting with the brightest minds in the ecosystem."
     },
     "card2": {
       "title": "Who?",
@@ -21,6 +21,7 @@
     }
   },
   "prizeCard": {
+    "title": "GREAT PRIZES",
     "subtitle": "IN PRIZES FOR THIS EVENT",
     "textContent": "Cooperate, build and win!"
   },
@@ -70,5 +71,8 @@
   "mapSection": {
     "title": "Don't get lost!",
     "textContent": "The hackathon will take place in a unique location specially designed for this event! Through Google Maps, you will be able to see in detail the location of the event and get directions to the venue. Don't miss this unique opportunity to participate in the hackhaton in the perfect place, we are waiting for you there!"
+  },
+  "footer": {
+    "description": "Dotlabs() is a non-profit community, where Web3 is taught to anyone who is interested in writing the future of the internet."
   }
 }

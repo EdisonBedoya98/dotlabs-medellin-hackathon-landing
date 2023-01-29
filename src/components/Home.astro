@@ -3,7 +3,7 @@ import startIcon from "../assets/icons/start.svg";
 import lineIcon from "../assets/icons/line-title.svg";
 import backgroundHomeImage from "../assets/images/background-home.svg";
 import { textGradient } from "../utils/constants";
-import { Trans } from "astro-i18next/components";
+import { t } from "i18next";
 ---
 
 <section
@@ -27,17 +27,14 @@ import { Trans } from "astro-i18next/components";
       </div>
     </h1>
     <p class="max-w-md text-center text-lg">
-      <Trans i18nKey="home.invitation">
-        ¿Te sumas al reto de participar en la hackathon blockchain más grande de
-        Latinoamérica?
-      </Trans>
+      {t("home.invitation")}
     </p>
     <a
       href="#date"
       class="bg-main text-white px-16 py-3 rounded-lg flex items-center gap-x-4 z-10"
     >
       <img src={startIcon} alt="Start Icon" />
-      <span><Trans i18nKey="home.button">Comenzar</Trans></span>
+      <span>{t("home.button")}</span>
     </a>
   </div>
 </section>

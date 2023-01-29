@@ -3,7 +3,7 @@ import { mainGradient, yellowTextGradient } from "../utils/constants";
 import titleSubline from "../assets/images/prize_title_subline.svg";
 import smallBlocksTop from "../assets/images/background_small_blocks_top.svg";
 import smallBlocksBottom from "../assets/images/background_small_block_bottom.svg";
-import { Trans } from "astro-i18next/components";
+import { t } from "i18next";
 ---
 
 <section class="h-fit my-32 min-h-[20rem] flex">
@@ -19,7 +19,7 @@ import { Trans } from "astro-i18next/components";
       <h1
         class={`text-5xl md:text-7xl text-center font-extrabold ${yellowTextGradient}`}
       >
-        50K USD
+        {t("prizeCard.title")}
       </h1>
       <img
         class="m-auto"
@@ -28,10 +28,10 @@ import { Trans } from "astro-i18next/components";
       />
     </div>
     <h2 class="text-2xl md:text-4xl font-bold text-center text-white z-10">
-      <Trans i18nKey="prizeCard.subtitle">EN PREMIOS PARA ESTE EVENTO</Trans>
+      {t("prizeCard.subtitle")}
     </h2>
     <p class="text-center text-yellow-custom z-10">
-      <Trans i18nKey="prizeCard.textContent">¡Colabora, crea y gana!</Trans>
+      {t("prizeCard.textContent")}
     </p>
     <img
       class="object-fill absolute bottom-0"

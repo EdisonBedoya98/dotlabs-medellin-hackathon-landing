@@ -7,7 +7,6 @@ import cardInformationImage_2 from "../../assets/images/cardInfo_img_2.svg";
 import { textGradient } from "../../utils/constants";
 import TicketCard from "../../components/TicketCard.astro";
 import { t, changeLanguage } from "i18next";
-import { Trans } from "astro-i18next/components";
 import FaqList from "../../components/FaqList.astro";
 import MapSection from "../../components/MapSection.astro";
 import PrizeCard from "../../components/PrizeCard.astro";
@@ -27,7 +26,7 @@ changeLanguage("en");
   >
     <div class="max-w-max p-3 rounded-2xl my-3 bg-yellow-custom">
       <p class={`font-bold ${textGradient} text-3xl tracking-wide`}>
-        <Trans i18nKey="cardInformation.date">24 y 25 DE MARZO</Trans>
+        {t("cardInformation.date")}
       </p>
     </div>
   </CardInformation>

@@ -1,9 +1,9 @@
 ---
-import { Trans } from "astro-i18next/components";
 import { textGradient } from "../utils/constants";
 import BackgroundBlockLeft from "../assets/images/background_blocks_left.svg";
 import BackgroundBlockRigth from "../assets/images/background_blocks_rigth.svg";
 import ticketIcon from "../assets/icons/ticket-icon.svg";
+import { t } from "i18next";
 ---
 
 <section id="ticket" class="h-screen min-h-[20rem] flex justify-between">
@@ -18,21 +18,16 @@ import ticketIcon from "../assets/icons/ticket-icon.svg";
     <h1
       class={`text-center text-5xl md:text-7xl font-extrabold ${textGradient} z-30`}
     >
-      <Trans i18nKey="ticketCard.title">OBTÉN TU TICKET</Trans>
+      {t("ticketCard.title")}
     </h1>
     <p class="text-center text-xl md:text-3xl font-bold z-30">
-      <Trans i18nKey="ticketCard.textContent">
-        ¡No esperes más y obtén tu ticket para participar!
-      </Trans>
+      {t("ticketCard.textContent")}
     </p>
     <button
       class={`w-max md:w-[300px] gap-3 rounded-2xl py-2 px-12 flex place-self-center justify-center text-white mt-10 bg-main z-10`}
-      ><img src={ticketIcon} alt="Alt text" /><Trans
-        i18nKey="ticketCard.button"
-      >
-        Adquirir
-      </Trans></button
-    >
+      ><img src={ticketIcon} alt="Alt text" />
+      {t("ticketCard.button")}
+    </button>
     <img
       src={BackgroundBlockLeft}
       alt="The iamge cannot be rendered"
