@@ -9,6 +9,7 @@
     "prize": "Prize"
   },
   "countDown": {
+    "textContent": "Only left:",
     "title": "Coming soon"
   },
   "cardInformation": {
