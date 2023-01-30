@@ -9,7 +9,9 @@ import { t } from "i18next";
   <div class="flex gap-x-3">
     <img src={timerIcon} alt="Instagram" />
     <p>
-      Solo faltan:<span class="text-yellow-custom font-semibold">
+      {t("countDown.textContent")}<span
+        class="text-yellow-custom font-semibold"
+      >
         {t("countDown.title")}
         <!-- 3 Días / 18 Hrs / 25seg -->
       </span>

@@ -9,6 +9,7 @@
     "prize": "Premio"
   },
   "countDown": {
+    "textContent": "Solo faltan:",
     "title": "Próximamente"
   },
   "cardInformation": {
