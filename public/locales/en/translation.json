@@ -40,36 +40,48 @@
     "subtitle": "Here you will find the answers",
     "faqs": {
       "faq1": {
-        "question": "ENGLISH ¿Que es el Hackhaton?",
-        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+        "question": "¿What is Dotlabs(Medellín)?",
+        "answer": "Dotlabs(Medellín) is a hackathon focused on product, solution or protocol development based on Ethereum and all the projects that use it."
       },
       "faq2": {
-        "question": "ENGLISH ¿Que es el Hackhaton?",
-        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+        "question": "¿What is Dotlabs()?",
+        "answer": "Dotlabs() is a developers community. We're a team that shares knowlegde, experiences and great moments."
       },
       "faq3": {
-        "question": "ENGLISH ¿Que es el Hackhaton?",
-        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+        "question": "¿When and where is going to occur The Dotlabs(Medellín)?",
+        "answer": "¡Coming soon!"
       },
       "faq4": {
-        "question": "ENGLISH ¿Que es el Hackhaton?",
-        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+        "question": "¿What is Solidity?",
+        "answer": "Solidity is a Smart Contracts oriented programming language. It's compatible with EVM and the entire Ethereum ecosystem."
       },
       "faq5": {
-        "question": "ENGLISH ¿Que es el Hackhaton?",
-        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+        "question": "¿Who are the main sponsors?",
+        "answer": "¡Coming soon!"
       },
       "faq6": {
-        "question": "ENGLISH ¿Que es el Hackhaton?",
-        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+        "question": "¿What profiles and skills are we looking for?",
+        "answer": "We look for developers with good ideas and eager to learn, that have some crypto knowledge and want to connect with leaders of the crypto and blockchain industry.\n You got extra points if you've got knowledge of the user-facing crypto market and know several programming languages (Solidity, Rust, JavaScript and Python have the advantage)."
       },
       "faq7": {
-        "question": "ENGLISH ¿Que es el Hackhaton?",
-        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+        "question": "¿What opportunities and benefits will I have by participating on this hackathon?",
+        "answer": "You'll be able to network with the field's leaders, know an ecosystem in constant growing and develop your idea in a safe and fun space while eating pizza."
       },
       "faq8": {
-        "question": "ENGLISH ¿Que es el Hackhaton?",
-        "answer": "ENGLISH Un hackathon es un evento en el que participantes de diferentes áreas de especialización se reúnen durante un período de tiempo limitado para colaborar y desarrollar soluciones tecnológicas innovadoras."
+        "question": "¿Where can I know more?",
+        "answer": "If you are a developer and have never heard of Solidity, Rust or Dotlabs(), just look at the top of the page for our socials."
+      },
+      "faq9": {
+        "question": "¿Where I can pre-register?",
+        "answer": "¡Coming soon!"
+      },
+      "faq10": {
+        "question": "¿What are the prizes?",
+        "answer": "¡Coming soon!"
+      },
+      "faq11": {
+        "question": "¿Where can I keep up to date with the news from Dotlabs() hackathon?",
+        "answer": "To keep up to date with our news let's check it out the top of the site for our socials."
       }
     }
   },
