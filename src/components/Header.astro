@@ -45,6 +45,10 @@ import { t } from "i18next";
       <a id="ancorDestopFaq" class="hover:font-semibold cursor-pointer">FAQ</a>
       <!-- Does not require translation -->
       <a id="ancorDestopMap" class="hover:font-semibold cursor-pointer">Map</a>
+      <!-- Does not require translation -->
+      <a href="/workshops" class="hover:font-semibold cursor-pointer"
+        >{t("nav.workshop")}</a
+      >
     </nav>
     <img
       id="menuMobileButton"
@@ -63,6 +67,12 @@ import { t } from "i18next";
 </header>
 
 <script>
+  const origin = window.location.host.includes("localhost")
+    ? `http://${window.location.host}`
+    : `https://${window.location.host}`;
+
+  const lang = window.location.href.includes("en") ? "en/" : "";
+
   const scrollIntoviewConf: ScrollIntoViewOptions = {
     behavior: "smooth",
     block: "center",
@@ -79,6 +89,7 @@ import { t } from "i18next";
   const ticketButton = document.getElementById("ancorDestopTicket");
   const faqButton = document.getElementById("ancorDestopFaq");
   const mapButton = document.getElementById("ancorDestopMap");
+  const workshop = document.getElementById("ancorWorkshops");
 
   const home = document.getElementById("home");
   const date = document.getElementById("date");
@@ -88,33 +99,66 @@ import { t } from "i18next";
   const faq = document.getElementById("faq");
   const map = document.getElementById("map");
 
-  dotlabsLogoButton?.addEventListener("click", () =>
-    home?.scrollIntoView(scrollIntoviewConf)
-  );
-  homeButton?.addEventListener("click", () =>
-    home?.scrollIntoView(scrollIntoviewConf)
-  );
-  dateButton?.addEventListener("click", () =>
-    date?.scrollIntoView(scrollIntoviewConf)
-  );
-  teamButton?.addEventListener("click", () =>
-    team?.scrollIntoView(scrollIntoviewConf)
-  );
-  prizeButton?.addEventListener("click", () =>
-    prize?.scrollIntoView(scrollIntoviewConf)
-  );
-  teamButton?.addEventListener("click", () =>
-    team?.scrollIntoView(scrollIntoviewConf)
-  );
-  ticketButton?.addEventListener("click", () =>
-    ticket?.scrollIntoView(scrollIntoviewConf)
-  );
-  faqButton?.addEventListener("click", () =>
-    faq?.scrollIntoView(scrollIntoviewConf)
-  );
-  mapButton?.addEventListener("click", () =>
-    map?.scrollIntoView(scrollIntoviewConf)
-  );
+  dotlabsLogoButton?.addEventListener("click", () => {
+    if (window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}`;
+    }
+    home?.scrollIntoView(scrollIntoviewConf);
+  });
+  homeButton?.addEventListener("click", () => {
+    if (window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}`;
+    }
+    home?.scrollIntoView(scrollIntoviewConf);
+  });
+  dateButton?.addEventListener("click", () => {
+    if (window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}`;
+    }
+    date?.scrollIntoView(scrollIntoviewConf);
+  });
+  teamButton?.addEventListener("click", () => {
+    if (window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}`;
+    }
+    team?.scrollIntoView(scrollIntoviewConf);
+  });
+  prizeButton?.addEventListener("click", () => {
+    if (window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}`;
+    }
+    prize?.scrollIntoView(scrollIntoviewConf);
+  });
+  teamButton?.addEventListener("click", () => {
+    if (window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}`;
+    }
+    team?.scrollIntoView(scrollIntoviewConf);
+  });
+  ticketButton?.addEventListener("click", () => {
+    if (window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}`;
+    }
+    ticket?.scrollIntoView(scrollIntoviewConf);
+  });
+  faqButton?.addEventListener("click", () => {
+    if (window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}`;
+    }
+    faq?.scrollIntoView(scrollIntoviewConf);
+  });
+  mapButton?.addEventListener("click", () => {
+    if (window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}`;
+    }
+    map?.scrollIntoView(scrollIntoviewConf);
+  });
+
+  workshop?.addEventListener("click", () => {
+    if (!window.location.pathname.includes("workshops")) {
+      window.location.href = `${origin}/${lang}workshops`;
+    }
+  });
 
   const menuMobile = document.getElementById("menuMobile") as HTMLDivElement;
   const buttonMenuMobile = document.getElementById("menuMobileButton");
