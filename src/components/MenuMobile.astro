@@ -39,11 +39,11 @@ import { LanguageSelector } from "astro-i18next/components";
       <!-- Does not require translation -->
       <AncorNavHeader id="ancorMap" idTo="map" content="Map" />
 
-      <AncorNavHeader
-        id="ancorWorkshops"
-        idTo="Workshops"
-        content={t("nav.workshop")}
-      />
+      <a
+        href="https://dotlabs-workshops-calendar.vercel.app/"
+        class="hover:font-semibold text-main py-2 pl-3 border-b-[1px] border-black/30"
+        >{t("nav.workshop")}</a
+      >
     </nav>
 
     <Socials customStyles="flex-row-reverse pt-4">
