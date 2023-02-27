@@ -1,0 +1,13 @@
+---
+import { changeLanguage } from "i18next";
+import WorkshopsHome from "../components/WorkshopsHome.astro";
+import WorkshopsSection from "../components/WorkshopsSection.astro";
+import Layout from "../layouts/Layout.astro";
+
+changeLanguage("es");
+---
+
+<Layout title="Dotlabs(Workshops)">
+  <WorkshopsHome />
+  <WorkshopsSection />
+</Layout>

@@ -21,6 +21,12 @@ import { LanguageSelector } from "astro-i18next/components";
       />
     </div>
     <nav class="flex flex-col gap-x-4 border-t-[1px] border-black/30 mt-2">
+      <a
+        id="backToHome"
+        href="/"
+        class="hidden hover:font-semibold bg-main rounded-md text-white py-2 pl-3 border-b-[1px] border-black/30"
+        >{t("nav.backToHome")}</a
+      >
       <AncorNavHeader id="ancorHome" idTo="home" content={t("nav.home")} />
       <AncorNavHeader id="ancorDate" idTo="date" content={t("nav.date")} />
 
@@ -32,6 +38,12 @@ import { LanguageSelector } from "astro-i18next/components";
       <AncorNavHeader id="ancorFaq" idTo="faq" content="FAQ" />
       <!-- Does not require translation -->
       <AncorNavHeader id="ancorMap" idTo="map" content="Map" />
+
+      <a
+        href="https://dotlabs-workshops-calendar.vercel.app/"
+        class="hover:font-semibold text-main py-2 pl-3 border-b-[1px] border-black/30"
+        >{t("nav.workshop")}</a
+      >
     </nav>
 
     <Socials customStyles="flex-row-reverse pt-4">
@@ -42,3 +54,15 @@ import { LanguageSelector } from "astro-i18next/components";
     </Socials>
   </div>
 </div>
+
+<script>
+  const mobileMenuButtons = document.querySelectorAll(".mobileMenuButton");
+  const backToHomeButton = document.getElementById("backToHome");
+
+  if (window.location.pathname.includes("workshops")) {
+    mobileMenuButtons.forEach((button) => {
+      backToHomeButton?.classList.remove("hidden");
+      button.classList.add("hidden");
+    });
+  }
+</script>

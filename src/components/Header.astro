@@ -45,6 +45,11 @@ import { t } from "i18next";
       <a id="ancorDestopFaq" class="hover:font-semibold cursor-pointer">FAQ</a>
       <!-- Does not require translation -->
       <a id="ancorDestopMap" class="hover:font-semibold cursor-pointer">Map</a>
+      <!-- Does not require translation -->
+      <a
+        href="https://dotlabs-workshops-calendar.vercel.app/"
+        class="hover:font-semibold cursor-pointer">{t("nav.workshop")}</a
+      >
     </nav>
     <img
       id="menuMobileButton"
@@ -67,10 +72,12 @@ import { t } from "i18next";
     behavior: "smooth",
     block: "center",
   };
+
   const scrollIntoviewConfMobile: ScrollIntoViewOptions = {
     behavior: "smooth",
     block: "nearest",
   };
+
   const dotlabsLogoButton = document.getElementById("dotlabsLogo");
   const homeButton = document.getElementById("ancorDestopHome");
   const dateButton = document.getElementById("ancorDestopDate");
@@ -88,33 +95,33 @@ import { t } from "i18next";
   const faq = document.getElementById("faq");
   const map = document.getElementById("map");
 
-  dotlabsLogoButton?.addEventListener("click", () =>
-    home?.scrollIntoView(scrollIntoviewConf)
-  );
-  homeButton?.addEventListener("click", () =>
-    home?.scrollIntoView(scrollIntoviewConf)
-  );
-  dateButton?.addEventListener("click", () =>
-    date?.scrollIntoView(scrollIntoviewConf)
-  );
-  teamButton?.addEventListener("click", () =>
-    team?.scrollIntoView(scrollIntoviewConf)
-  );
-  prizeButton?.addEventListener("click", () =>
-    prize?.scrollIntoView(scrollIntoviewConf)
-  );
-  teamButton?.addEventListener("click", () =>
-    team?.scrollIntoView(scrollIntoviewConf)
-  );
-  ticketButton?.addEventListener("click", () =>
-    ticket?.scrollIntoView(scrollIntoviewConf)
-  );
-  faqButton?.addEventListener("click", () =>
-    faq?.scrollIntoView(scrollIntoviewConf)
-  );
-  mapButton?.addEventListener("click", () =>
-    map?.scrollIntoView(scrollIntoviewConf)
-  );
+  dotlabsLogoButton?.addEventListener("click", () => {
+    home?.scrollIntoView(scrollIntoviewConf);
+  });
+  homeButton?.addEventListener("click", () => {
+    home?.scrollIntoView(scrollIntoviewConf);
+  });
+  dateButton?.addEventListener("click", () => {
+    date?.scrollIntoView(scrollIntoviewConf);
+  });
+  teamButton?.addEventListener("click", () => {
+    team?.scrollIntoView(scrollIntoviewConf);
+  });
+  prizeButton?.addEventListener("click", () => {
+    prize?.scrollIntoView(scrollIntoviewConf);
+  });
+  teamButton?.addEventListener("click", () => {
+    team?.scrollIntoView(scrollIntoviewConf);
+  });
+  ticketButton?.addEventListener("click", () => {
+    ticket?.scrollIntoView(scrollIntoviewConf);
+  });
+  faqButton?.addEventListener("click", () => {
+    faq?.scrollIntoView(scrollIntoviewConf);
+  });
+  mapButton?.addEventListener("click", () => {
+    map?.scrollIntoView(scrollIntoviewConf);
+  });
 
   const menuMobile = document.getElementById("menuMobile") as HTMLDivElement;
   const buttonMenuMobile = document.getElementById("menuMobileButton");

@@ -1,4 +1,7 @@
 {
+  "header": {
+    "description": "Dotlabs() workshops calendar"
+  },
   "home": {
     "invitation": "Are you ready to join the challenge of participating in the greatest blockchain hackathon in Latin America?",
     "button": "Register now"
@@ -6,7 +9,9 @@
   "nav": {
     "home": "Home",
     "date": "Date",
-    "prize": "Prize"
+    "prize": "Prize",
+    "workshop": "Workshops",
+    "backToHome": "Go back to home"
   },
   "countDown": {
     "textContent": "Only left:",
@@ -88,6 +93,17 @@
   "mapSection": {
     "title": "Don't get lost!",
     "textContent": "The hackathon will take place in a unique location specially designed for this event! Through Google Maps, you will be able to see in detail the location of the event and get directions to the venue. Don't miss this unique opportunity to participate in the hackhaton in the perfect place, we are waiting for you there!"
+  },
+  "workshop": {
+    "agent": "Speaker",
+    "when": "Today",
+    "cards": {
+      "title-3": "Smart Contracts unitesting with Hardhat",
+      "title-4": "Smart Contracts execution in the EVM",
+      "title-5": "Solidity Master",
+      "title-6": "Solidity Grand-Master",
+      "title-7": "Solidity Lengendary"
+    }
   },
   "footer": {
     "description": "Dotlabs() is a non-profit community, where Web3 is taught to anyone who is interested in writing the future of the internet."

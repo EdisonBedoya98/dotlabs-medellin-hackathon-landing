@@ -1,0 +1,20 @@
+---
+import backgroundHomeImage from "../assets/images/background-home.svg";
+import { textGradient } from "../utils/constants";
+---
+
+<section class="h-screen min-h-[40rem] lg:min-h-[50rem] flex justify-center">
+  <img
+    src={backgroundHomeImage}
+    alt="Background image"
+    class="absolute top-0 w-[50rem] h-[50rem] md:w-full md:h-[50rem] lg:h-[75rem] lg:-top-60 object-cover"
+  />
+
+  <div class="flex justify-center mt-44">
+    <h1
+      class={`text-5xl md:text-6xl font-extrabold flex text-center ${textGradient}`}
+    >
+      DOTLABS {" "} (WORKSHOPS)
+    </h1>
+  </div>
+</section>

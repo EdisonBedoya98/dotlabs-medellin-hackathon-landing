@@ -1,4 +1,7 @@
 {
+  "header": {
+    "description": "Calendario de talleres de Dotlabs()"
+  },
   "home": {
     "invitation": "¿Te sumas al reto de participar en la hackathon blockchain más grande de Latinoamérica?",
     "button": "Comenzar"
@@ -6,7 +9,9 @@
   "nav": {
     "home": "Inicio",
     "date": "Fecha",
-    "prize": "Premio"
+    "prize": "Premio",
+    "workshop": "Talleres",
+    "backToHome": "Volver al inicio"
   },
   "countDown": {
     "textContent": "Solo faltan:",
@@ -88,6 +93,20 @@
   "mapSection": {
     "title": "¡No te pierdas!",
     "textContent": "¡El hackhaton se llevará a cabo en un lugar único y especialmente diseñado para este evento! A través de Google Maps, podrás ver en detalle la ubicación del evento y obtener direcciones para llegar al lugar. No te pierdas esta oportunidad única de participar en el hackhaton en el lugar perfecto. ¡Te esperamos allí!"
+  },
+  "workshop": {
+    "agent": "Ponente",
+    "when": "Hoy",
+    "cards": {
+      "title-3": "Test unitarios de Smart Contracts con Hardhat",
+      "title-4": "Ejecución de Smart Contracts en la EVM",
+      "title-5": "Solidity Master",
+      "title-6": "Solidity Grand-Master",
+      "title-7": "Solidity Lengendary"
+    }
+  },
+  "helpSection": {
+    "message": "Streaming a través de nuestro canal oficial de YouTube"
   },
   "footer": {
     "description": "Dotlabs() es una comunidad sin ánimo de lucro, donde se enseña Web3 a cualquier persona que esté interesada en escribir el futuro del internet"
